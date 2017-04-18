@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sliu.framework.app.wfw.mapper.WfwMapper">
+	<select id="listAllPyfa_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		FROM
+		    zs_pyfa a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.jsgh=b.dlm
+		where 1=1
+		<if test="Q_xm_S_LK != null and Q_xm_S_LK != ''">
+			and	b.xm like CONCAT('%',#{Q_xm_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllPyfa" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.jsgh,
+		    b.xm,
+		    a.fabt,
+		    a.famx,
+		    a.tjsj,
+		    a.bz
+		FROM
+		    zs_pyfa a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.jsgh=b.dlm
+		where 1=1
+		<if test="Q_xm_S_LK != null and Q_xm_S_LK != ''">
+			and	b.xm like CONCAT('%',#{Q_xm_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listPyfa" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.jsgh,
+		    b.xm,
+		    a.fabt,
+		    a.famx,
+		    a.tjsj,
+		    a.bz
+		FROM
+		    zs_pyfa a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.jsgh=b.dlm
+		where 1=1
+		<if test="Q_id_N_EQ != null and Q_id_N_EQ != ''">
+			and	a.id=#{Q_id_N_EQ}			
+		</if>
+	</select>
+	
+	
+	<select id="listAllJqfxx_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		FROM
+		    zs_xsjqfxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllJqfxx" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.xn,
+		    a.xh,
+		    CASE
+		        WHEN a.lx='1'
+		        THEN '缴费'
+		        ELSE '欠费'
+		    END AS lx,
+		    b.xm,
+		    a.jfxm,
+		    a.yjje,
+		    a.sjje,
+		    a.qfje,
+		    a.bz
+		FROM
+		    zs_xsjqfxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	
+	<select id="listAllDkxx_count" parameterType="filter" resultType="int">
+		SELECT
+		    count(1)
+		FROM
+		    zs_xsdkxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		left join 
+		    (select * from sys_sjzd where zl='dklx') c
+		on 
+		    a.dklx=c.zdbm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllDkxx" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.dklx,
+		    c.zdz,
+		    a.xh,
+		    b.xm,
+		    a.hkrq,
+		    a.je,
+		    a.bz
+		FROM
+		    zs_xsdkxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		left join 
+		    (select * from sys_sjzd where zl='dklx') c
+		on 
+		    a.dklx=c.zdbm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listAllXjyd_count" parameterType="filter" resultType="int">
+		SELECT
+		    count(1)
+		FROM
+		    zs_xjyd a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		LEFT JOIN
+		    (SELECT * FROM sys_sjzd WHERE zl='ydlx') c
+		ON
+		    a.ydlx=c.zdbm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllXjyd" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.xh,
+		    b.xm,
+		    a.ydlx,
+		    c.zdz,
+		    a.xxqk,
+		    a.fssj,
+		    a.bz
+		FROM
+		    zs_xjyd a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		LEFT JOIN
+		    (SELECT * FROM sys_sjzd WHERE zl='ydlx') c
+		ON
+		    a.ydlx=c.zdbm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listXjyd" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.xh,
+		    b.xm,
+		    a.ydlx,
+		    c.zdz,
+		    a.xxqk,
+		    a.fssj,
+		    a.bz
+		FROM
+		    zs_xjyd a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		LEFT JOIN
+		    (SELECT * FROM sys_sjzd WHERE zl='ydlx') c
+		ON
+		    a.ydlx=c.zdbm
+		where 1=1
+		<if test="Q_id_N_EQ != null and Q_id_N_EQ != ''">
+			and	a.id=#{Q_id_N_EQ}			
+		</if>
+	</select>
+	
+	<select id="listAllJxcg_count" parameterType="filter" resultType="int">
+		SELECT
+		    count(1)
+		FROM
+    		zs_jxcg
+		where 1=1
+		<if test="Q_gh_S_LK != null and Q_gh_S_LK != ''">
+			and	gh like CONCAT('%',#{Q_gh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllJxcg" parameterType="filter" resultType="pureMap">
+		SELECT
+		    id,
+		    cgbh,
+		    cgmc,
+		    lb,
+		    bm,
+		    gh,
+		    xm,
+		    hjsj,
+		    zzjf,
+		    bz
+		FROM
+    		zs_jxcg
+		where 1=1
+		<if test="Q_gh_S_LK != null and Q_gh_S_LK != ''">
+			and	gh like CONCAT('%',#{Q_gh_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	
+	<select id="listAllJsjkxx_count" parameterType="filter" resultType="int">
+		SELECT
+		    count(1)
+		FROM
+		    zs_jsjkxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.jsgh=b.dlm
+		where 1=1
+		<if test="Q_jsgh_S_LK != null and Q_jsgh_S_LK != ''">
+			and	a.jsgh like CONCAT('%',#{Q_jsgh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllJsjkxx" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.jsgh,
+		    b.xm,
+		    a.jkkcbh,
+		    a.jkkcmc,
+		    a.ksxz,
+		    a.ksfs,
+		    a.kssc,
+		    a.jkrq,
+		    DATE_FORMAT(a.kssj,'%H:%i:%S') as kssj,
+		    a.jkdd,
+		    a.cjbj,
+		    a.ksrs,
+		    a.bz
+		FROM
+		    zs_jsjkxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.jsgh=b.dlm
+		where 1=1
+		<if test="Q_jsgh_S_LK != null and Q_jsgh_S_LK != ''">
+			and	a.jsgh like CONCAT('%',#{Q_jsgh_S_LK},'%')			
+		</if>
+		order by a.jkrq
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listAllXxkxx_count" parameterType="filter" resultType="int">
+		SELECT
+		    count(1)
+		FROM
+		    zs_xxkxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		LEFT JOIN
+		    sys_yh c
+		ON
+		    a.sklsgh=c.dlm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllXxkxx" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.xh,
+		    b.xm,
+		    a.xn,
+		    a.xq,
+		    a.kcbh,
+		    a.kcmc,
+		    a.skdd,
+		    a.sklsgh,
+		    c.xm AS lsxm,
+		    a.bz
+		FROM
+		    zs_xxkxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.xh=b.dlm
+		LEFT JOIN
+		    sys_yh c
+		ON
+		    a.sklsgh=c.dlm
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listAllKyxm_count" parameterType="filter" resultType="int">
+		SELECT
+		    count(1)
+		FROM
+		    zs_kyxm a
+		LEFT JOIN
+		    sys_zzjg b
+		ON
+		    a.bm=b.bmbh
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllKyxm" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.xmmc,
+		    a.lxrq,
+		    a.bm,
+		    b.bmmc,
+		    a.xm,
+		    a.zzjf,
+		    a.bz
+		FROM
+		    zs_kyxm a
+		LEFT JOIN
+		    sys_zzjg b
+		ON
+		    a.bm=b.bmbh
+		where 1=1
+		<if test="Q_xh_S_LK != null and Q_xh_S_LK != ''">
+			and	a.xh like CONCAT('%',#{Q_xh_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listAllTsfl_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		FROM
+		    zs_tsfl a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.zl=b.dlm
+		where 1=1
+		<if test="Q_zl_S_LK != null and Q_zl_S_LK != ''">
+			and	a.zl like CONCAT('%',#{Q_zl_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllTsfl" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.zl,
+		    a.sl,
+		    a.bz
+		FROM
+		    zs_tsfl a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.zl=b.dlm
+		where 1=1
+		<if test="Q_pksdj_S_LK != null and Q_zl_S_LK != ''">
+			and	a.zl like CONCAT('%',#{Q_zl_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listAllPksxx_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		FROM
+		    zs_pksxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.pksdj=b.dlm
+		where 1=1
+		<if test="Q_pksdj_S_LK != null and Q_pksdj_S_LK != ''">
+			and	a.pksdj like CONCAT('%',#{Q_pksdj_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllPksxx" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.zy,
+		    a.pksdj,
+		    a.xm,
+		    a.bj,
+		    a.xh,
+		    a.xy,
+		    a.bz
+		FROM
+		    zs_pksxx a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.pksdj=b.dlm
+		where 1=1
+		<if test="Q_pksdj_S_LK != null and Q_pksdj_S_LK != ''">
+			and	a.pksdj like CONCAT('%',#{Q_pksdj_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listAllXcsk_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		FROM
+		    sh_xcsk a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.cph=b.dlm
+		where 1=1
+		<if test="Q_cph_S_LK != null and Q_cph_S_LK != ''">
+			and	a.cph like CONCAT('%',#{Q_cph_S_LK},'%')			
+		</if>
+	</select>
+	<select id="listAllXcsk" parameterType="filter" resultType="pureMap">
+		SELECT
+		    a.id,
+		    a.cph,
+		    a.rq,
+		    a.cfsj,
+		    a.cfd,
+		    a.mdd,
+		    a.fbr,
+		    a.fbrxm,
+		    a.zt
+		FROM
+		    sh_xcsk a
+		LEFT JOIN
+		    sys_yh b
+		ON
+		    a.cph=b.dlm
+		where 1=1
+		<if test="Q_cph_S_LK != null and Q_cph_S_LK != ''">
+			and	a.cph like CONCAT('%',#{Q_cph_S_LK},'%')			
+		</if>
+		limit #{start},#{limit}
+	</select>
+</mapper>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:sec="http://www.springframework.org/schema/security"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+    <util:list id="resourceList" list-class="java.util.ArrayList" value-type="java.lang.String">
+				<value>100000,,我的工作台,/workdesk,100000,ROLE_ADMIN,workspace</value>
+				<!-- <value>101000,100000,附件管理,/sys/SysFile/attachments.*,900900,ROLE_ADMIN,fjgl</value> -->
+				<value>191100,100000,修改密码,/sys/SysUser/changePwd,900900,NONE,xgmm</value>
+				<value>900000,,系统管理,/sysmanager,900000,ROLE_ADMIN,system</value>
+				<value>900700,900000,系统用户,/sys/SysUser/list.*,900700,ROLE_ADMIN,xtyh</value>
+				<value>900600,900000,用户角色,/sys/SysRole/list.*,900600,ROLE_ADMIN,yhjs</value>
+				<value>900500,900000,数据字典,/sys/SysDict/list.*,900500,ROLE_ADMIN,sjzd</value>
+				<value>900100,900000,组织机构,/sys/SysArea/list.*,900500,ROLE_ADMIN,zzjg</value>
+				<value>900800,900000,系统日志,/sys/SysLog/list.*,900800,ROLE_ADMIN,xtrz</value>
+<!-- 				<value>900900,900000,数据备份,/sys/SysBackup/list.*,900900,ROLE_ADMIN,sjbf</value> -->
+				<!-- <value>900200,900000,微信绑定用户,/sys/SysWxyh/wxyhPage.*,900200,ROLE_ADMIN,wxbdyh</value> -->
+				<!-- <value>901000,900000,微信用户绑定,/sys/SysWxyh/wxbdPage.*,901000,ROLE_ADMIN,wxyhbd</value> -->
+				
+<!--  			    <value>1300000,0,工作流,/process,1300000,ROLE_ADMIN,</value>
+				<value>1300100,1300000,流程部署,/cps/processXN/deployProcessPage.*,1300100,ROLE_ADMIN,</value>
+				<value>1300200,1300000,启动流程,/cps/test/testProcessPage.*,1300200,ROLE_ADMIN,</value>
+				<value>1300300,1300000,我的流程,/cps/processXN/myProcess.*,1300300,ROLE_ADMIN,</value>
+				<value>1300400,1300000,运行中的流程,/cps/processXN/runningProcess.*,1300400,ROLE_ADMIN,</value>
+				<value>1300500,1300000,我的任务,/cps/process/taskXN/pendWorkPoolIndex.*,1300500,ROLE_ADMIN,</value>
+				<value>1300600,1300000,已办任务,/cps/processXN/involvedProcess.*,1300600,ROLE_ADMIN,</value>
+				<value>1300700,1300000,历史流程,/cps/processXN/historyProcess.*,1300700,ROLE_ADMIN,</value>  -->
+				
+<!-- 				<value>1500000,,微主页,/sysmanager2,1500000,ROLE_ADMIN,system</value>
+				<value>1500100,1500000,主页,/wzy/ZyXyxw/zhuye.*,1500100,ROLE_ADMIN,wzy</value> 
+				<value>1500200,1500000,学院新闻,/wzy/ZyXyxw/xyxwPage.*,1500200,ROLE_ADMIN,xyxw</value>
+				<value>1500300,1500000,学院相关信息,/wzy/ZyXyxgxx/xyxgxxPage.*,1500300,ROLE_ADMIN,xyxgxx</value>
+				<value>1500400,1500000,流程信息,/wzy/ZyLcxx/lcxxPage.*,1500400,ROLE_ADMIN,lcxx</value>
+				<value>1500500,1500000,一键救援,/wzy/ZyYjjy/yjjyPage.*,1500500,ROLE_ADMIN,yjjy</value>
+				<value>1500600,1500000,一键救援详情,/wzy/ZyYjjy/zyYjjyDetail.*,1500600,ROLE_ADMIN,yjjyxq</value>
+				<value>1500700,1500000,电话黄历,/wzy/ZyDhhl/dhhlPage.*,1500700,ROLE_ADMIN,dhhl</value>
+				<value>1500800,1500000,电话黄历详情,/wzy/ZyDhhl/zyDhhlDetail.*,1500800,ROLE_ADMIN,dhhlxq</value>
+				<value>1500900,1500000,我要吐槽,/wzy/ZyWdtc/wdtcPage.*,1500900,ROLE_ADMIN,wytc</value>
+				<value>1501000,1500000,我要吐槽详情,/wzy/ZyWdtc/zyWdtcDetail.*,1501000,ROLE_ADMIN,wytcxq</value>
+				<value>1501000,1500000,Rss数据抓取,/rss/rssList.*,1500100,ROLE_ADMIN,rsszq</value>
+				
+				<value>1400000,,微服务,/sysmanager1,1400000,ROLE_ADMIN,system</value>
+ 				<value>1400100,1400000,学生考试成绩,/wfw/ZsXscj/xscjPage.*,1400100,ROLE_ADMIN,xskscj</value>
+				<value>1400100,1400000,主页,/wfw/zy/zhuyeHt.*,1400100,ROLE_ADMIN,wfwzy</value>
+				
+				<value>1400200,1400000,个人考试成绩,/wfw/ZsXscj/toXscj.*,1400200,ROLE_ADMIN,grkscj</value>				
+				<value>1400300,1400000,个人奖惩查询,/wfw/ZsXsjc/toXsjc.*,1400300,ROLE_ADMIN,grjccx</value>
+				<value>1400400,1400000,个人图书借阅查询,/wfw/ZsTsjyxx/toTsjyxx.*,1400400,ROLE_ADMIN,grtsjycx</value>
+				<value>1400500,1400000,个人工资查询,/wfw/ZsZggz/toZggzxx.*,1400500,ROLE_ADMIN,grgzcx</value>
+				<value>1400600,1400000,一卡通信息查询,/wfw/ZsYktxx/toYktxx.*,1400600,ROLE_ADMIN,yktxxcx</value>
+				<value>1400700,1400000,个人课表查询,/wfw/ZsKb/toXskb.*,1400700,ROLE_ADMIN,grkbcx</value>
+				<value>1400800,1400000,班级课表查询,/wfw/ZsKb/toBjkb.*,1400800,ROLE_ADMIN,bjkbcx</value>
+				<value>1400900,1400000,教师课表查询,/wfw/ZsKb/toJskb.*,1400900,ROLE_ADMIN,jskbcx</value>
+				<value>1401000,1400000,学生实习信息查询,/wfw/ZsXssxqk/toXssxqk.*,1401000,ROLE_ADMIN,xssxxxcx</value>
+				<value>1401100,1400000,培养计划查询,/wfw/ZsPyfa/toPyfa.*,1401100,ROLE_ADMIN,pyjhcx</value>
+				<value>1401200,1400000,个人考试信息查询,/wfw/ZsXsksapxx/toKsap.*,1401200,ROLE_ADMIN,grksxxcx</value>
+				<value>1401300,1400000,缴欠费信息查询,/wfw/ZsXsjqfxx/toXsjqfxx.*,1401300,ROLE_ADMIN,jqfxxcx</value>
+				<value>1401400,1400000,学生贷款信息查询,/wfw/ZsXsdkxx/toXsdkxx.*,1401400,ROLE_ADMIN,xsdkxxcx</value>
+				<value>1401500,1400000,学籍异动信息查询,/wfw/ZsXjyd/toXjyd.*,1401500,ROLE_ADMIN,xjydxxcx</value>
+				<value>1401600,1400000,教学成果信息查询,/wfw/ZsJxcg/toJxcg.*,1401600,ROLE_ADMIN,jxcgxxcx</value>
+				<value>1401700,1400000,监考信息查询,/wfw/ZsJsjkxx/toJsjkxx.*,1401700,ROLE_ADMIN,jkxxcx</value>
+				<value>1401800,1400000,选修课信息查询,/wfw/ZsXxkxx/toXxkxx.*,1401800,ROLE_ADMIN,xxkxxcx</value>
+				<value>1401900,1400000,科研项目查询,/wfw/ZsKyxm/toKyxm.*,1401900,ROLE_ADMIN,kyxmcx</value>
+				<value>1402000,1400000,图书分类查询,/wfw/ZsTsfl/toTsfl.*,1402000,ROLE_ADMIN,tsflcx</value>
+				<value>1402100,1400000,贫困生信息查询,/wfw/ZsPksxx/toPksxx.*,1402100,ROLE_ADMIN,pksxxcx</value> 
+
+				<value>1402200,1400000,评教信息后台,/wfw/ZsPjxx/pjxxPage.*,1402200,ROLE_ADMIN,pjxxht</value>
+				
+				<value>1402300,1400000,评教信息查询,/wfw/ZsPjxx/toPjxx.*,1402300,ROLE_ADMIN,pjxxcx</value>
+				<value>1402400,1400000,教室查询,/wfw/ZsJscx/toJscx.*,1402400,ROLE_ADMIN,jscx</value>
+				<value>1402500,1400000,宿舍查询,/wfw/ZsSscx/toSscx.*,1402500,ROLE_ADMIN,sscx</value> 
+				
+				<value>1700000,,微生活,/sysmanager4,1700000,ROLE_ADMIN,system</value>
+				<value>1700100,1700000,主页,/wsh/zy/zhuyeHt.*,1700100,ROLE_ADMIN,wshzy</value>
+				<value>1700200,1700000,微问卷,/wsh/WjObject/toWjList.*,1700200,ROLE_ADMIN,wjdc</value>
+				<value>1700300,1700000,问卷调查,/wsh/WjObject/toDcwj.*,1700300,ROLE_ADMIN,wjdc</value>
+				<value>1700400,1700000,校车时刻查询,/wsh/ShXcsk/shXcsk.*,1700400,ROLE_ADMIN,xcskcx</value>
+				<value>1700500,1700000,校车时刻查询页面,/wsh/ShXcsk/toShxcsk.*,1700500,ROLE_ADMIN,xcskcxym</value>
+				<value>1700600,1700000,失物招领,/wsh/ShSwzl/toSwzlList.*,1700600,ROLE_ADMIN,swzl</value>
+				<value>1700700,1700000,微信抽奖,/wsh/ShWxcjjg/toWxcj.*,1700700,ROLE_ADMIN,wxcj</value>
+				<value>1700800,1700000,微信抽奖配置,/wsh/ShWxcjpz/index.*,1700800,ROLE_ADMIN,wxcjpz</value>
+				<value>1700900,1700000,微报名,/wsh/ShWbm/toWbmList.*,1700900,ROLE_ADMIN,wbm</value>
+				<value>1701000,1700000,校车时刻线路图,/wsh/ShXcsk/toShxcskRoute.*,1701000,ROLE_ADMIN,xcskxlt</value>
+				<value>1701100,1700000,微海报,/wsh/ShWhb/toCreatWhb.*,1701100,ROLE_ADMIN,whb</value>
+				<value>1701200,1700000,微上墙,/wsh/ShWsq/toWsqList.*,1701200,ROLE_ADMIN,wsq</value>
+				<value>1701300,1700000,校友信息,/wsh/ShXyxx/toXyxx.*,1701300,ROLE_ADMIN,xyxx</value>
+				<value>1701400,1700000,微海报模板上传,/wsh/ShWhb//toUpload.*,1701400,ROLE_ADMIN,whbmbsc</value>
+				<value>1701500,1700000,表白墙,/wzy/ZyWdtc/shBbqDetail.*,1701500,ROLE_ADMIN,bbq</value>
+				
+				<value>1600000,,微信管理,/sysmanager3,1600000,ROLE_ADMIN,system</value>
+				<value>1600100,1600000,微信用户管理,/wxauth/user/wxUser.*,1600100,ROLE_ADMIN,wxyhgl</value>
+				<value>1600200,1600000,用户分组管理,/wxauth/group/wxGroup.*,1600200,ROLE_ADMIN,yhfzgl</value>
+				<value>1600300,1600000,缓存管理,/wxauth/cache/cacheMgr.*,1600300,ROLE_ADMIN,hcgl</value>
+				<value>1600400,1600000,群发管理,/wxauth/mass/massInfoPage.*,1600400,ROLE_ADMIN,qfgl</value>
+				<value>1600500,1600000,素材管理,/wxauth/materialmgr/materialmgrView.*,1600500,ROLE_ADMIN,scgl</value>
+				<value>1600600,1600000,菜单管理,/wxauth/menu/menuPage.*,1600600,ROLE_ADMIN,cdgl</value>
+				
+				
+				<value>1800000,,数据统计,/sysmanager5,1800000,ROLE_ADMIN,system</value>
+				<value>1800100,1800000,数据统计主页,/stat/zy/sjtjzy.*,1800100,ROLE_ADMIN,sjtjzy</value>
+				<value>1800200,1800000,在校学生统计,/stat/echarts/student.*,1800200,ROLE_ADMIN,zxxstj</value>
+				<value>1800300,1800000,师资力量统计,/stat/echarts/teacher.*,1800300,ROLE_ADMIN,szlltj</value>
+				<value>1800400,1800000,馆藏图书分类统计,/stat/echarts/library.*,1800400,ROLE_ADMIN,gctsfltj</value>
+				<value>1800500,1800000,外借图书分类统计,/stat/echarts/libraryborrow.*,1800500,ROLE_ADMIN,wjtsfltj</value>
+		        <value>1800600,1800000,学生选课分类统计,/stat/echarts/lession.*,1800600,ROLE_ADMIN,xsxkfltj</value>
+		        <value>1800700,1800000,教师学历统计,/stat/echarts/jsxl.*,1800700,ROLE_ADMIN,jsxltj</value>
+		        <value>1800800,1800000,生源地统计,/stat/echarts/syd.*,1800800,ROLE_ADMIN,sydtj</value>
+
+		        
+		        <value>1900000,,微提醒,/sysmanager6,1900000,ROLE_ADMIN,system</value>
+				<value>1900100,1900000,提醒数据管理,/wtx/TxTxxxlsjl/index.*,1900100,ROLE_ADMIN,txsjgl</value>
+				
+				<value>2300000,,报修系统,/sysmanager10,2300000,ROLE_ADMIN,system</value>
+				<value>2300100,2300000,报修管理,/bx/bxgl/index.*,2300100,ROLE_ADMIN,bxzt</value>
+				<value>2300800,2300000,报修申请,/wx/Bxsq/toBxsq.*,2300800,ROLE_ADMIN,bxzt</value>
+				<value>2300900,2300000,个人报修信息,/wx/Bxspyjb/toBxsqlcjl.*,2300900,ROLE_ADMIN,bxzt</value>
+				<value>2300200,2300000,报修主题,/bx/bxzt/list.*,2300200,ROLE_ADMIN,bxzt</value>
+				<value>2300300,2300000,报修查看,/bx/bxgl/list.*,2300300,ROLE_ADMIN,log</value> 
+				<value>2300400,2300000,报修审核,/bx/bxsh/shlist.*,2300400,ROLE_ADMIN,log</value>
+				<value>2300500,2300000,报修受理,/bx/bxsl/sllist.*,2300500,ROLE_ADMIN,log</value>
+				<value>2300600,2300000,报修处理,/bx/bxcl/cllist.*,2300600,ROLE_ADMIN,log</value>
+				<value>2300700,2300000,报修结束,/bx/bxwc/wclist.*,2300700,ROLE_ADMIN,log</value>
+				<value>2300800,2300000,报修楼宇统计,/bx/bxtj/toBxLytjPage.*,2300800,ROLE_ADMIN,log</value>
+				<value>2300900,2300000,报修类型统计,/bx/bxtj/toBxLxtjPage.*,2300900,ROLE_ADMIN,log</value>
+			    <value>2301000,2300000,报修按楼宇和状态统计,/bx/bxtj/toBxLyzttjPage.*,2301000,ROLE_ADMIN,log</value>
+				
+      		    <value>2000000,,走进智圣,/sysmanager7,2000000,ROLE_ADMIN,system</value>
+				<value>2000100,2000000,公司简介,/com/company/gsjjDetail.*,2000100,ROLE_ADMIN,gsjj</value>
+				<value>2000200,2000000,公司资讯,/com/company/gszxList.*,2000200,ROLE_ADMIN,gszx</value>
+				<value>2000300,2000000,公司资质,/com/company/gszzDetail.*,2000300,ROLE_ADMIN,gszz</value>
+				<value>2000400,2000000,公司荣誉,/com/company/gsryDetail.*,2000400,ROLE_ADMIN,gsry</value>
+				<value>2000500,2000000,服务体系,/com/company/fwtxDetail.*,2000500,ROLE_ADMIN,fwtx</value>
+				
+				
+				<value>2100000,,解决方案,/sysmanager8,2100000,ROLE_ADMIN,system</value>
+				<value>2100100,2100000,解决方案列表,/com/company/jjfaList.*,2100100,ROLE_ADMIN,jjfalb</value>
+				
+				<value>2200000,,成功案例,/sysmanager9,2200000,ROLE_ADMIN,system</value>
+				<value>2200100,2200000,教育案例列表,/com/company/cgalList?ClassID=201478960248,2200100,ROLE_ADMIN,jy</value>
+				<value>2200200,2200000,政府案例列表,/com/company/cgalList?ClassID=201440959594,2200200,ROLE_ADMIN,zf</value>
+				<value>2200300,2200000,金融案例列表,/com/company/cgalList?ClassID=201493036087,2200300,ROLE_ADMIN,jr</value>
+				<value>2200400,2200000,医疗案例列表,/com/company/cgalList?ClassID=201482537092,2200400,ROLE_ADMIN,yl</value>
+				<value>2200500,2200000,企业案例列表,/com/company/cgalList?ClassID=201415324852,2200500,ROLE_ADMIN,qy</value>     
+
+ 				<value>2400000,,设备管理,/sysmanager11,2400000,ROLE_ADMIN,system</value>
+				<value>2400100,2400000,设备管理,/sb/sbSbxx/sbxxPage.*,2400100,ROLE_ADMIN,jy</value>
+				<value>2400200,2400000,设备检验计划,/sbgl/SbSbjyjh/SbjyjhPage,2400200,ROLE_ADMIN,sbjyjh</value>
+				<value>2400300,2400000,设备检验记录,/sbgl/SbSbjyjl/SbjyjlPage,2400300,ROLE_ADMIN,sbjyjl</value>
+                <value>2400400,2400000,设备申购,/sbgl/SbSbsg/SbsgPage,2400400,ROLE_ADMIN,sbsg</value>
+                <value>2400500,2400000,设备申购部门审批,/sbgl/SbSbsg/SbsgBmspPage,2400500,ROLE_ADMIN,sbsgsp</value>
+                <value>2400600,2400000,设备申购领导审批,/sbgl/SbSbsg/SbsgLdspPage,2400600,ROLE_ADMIN,sbsgsp</value>
+                <value>2400700,2400000,设备申购财务审批,/sbgl/SbSbsg/SbsgCwspPage,2400700,ROLE_ADMIN,sbsgsp</value>
+                <value>2400800,2400000,设备借出信息,/sbgl/SbSbjcxx/SbjcxxPage,2400800,ROLE_ADMIN,sbjc</value>
+                <value>2400900,2400000,设备维修计划,/sbgl/SbSbwxjh/SbwxjhPage,2400900,ROLE_ADMIN,sbwxjh</value>
+                <value>2401000,2400000,设备维修记录,/sbgl/SbSbwxjl/SbwxjlPage,2401000,ROLE_ADMIN,sbwxjl</value>
+                <value>2401100,2400000,设备保养记录,/sbgl/SbSbbyjl/SbbyjlPage,2401100,ROLE_ADMIN,sbbyjl</value>
+                <value>2401200,2400000,设备类型统计,/sbgl/SbSbtj/toSblxtjPage,2401200,ROLE_ADMIN,sbsjtj</value>
+                <value>2401200,2400000,设备总资产统计,/sbgl/SbSbtj/toSbzzctjPage,2401200,ROLE_ADMIN,sbsjtj</value> -->
+                
+                <value>2500000,,校长信箱,/sysmanager12,2500000,ROLE_ADMIN,system</value>
+                <value>2500100,2500000,信件查看,/xzxx/XxXjxxb/getXjckList.*,2500100,ROLE_ADMIN,bxzt</value>
+				<value>2500200,2500000,信件信息,/xzxx/XxXjxxb/xjxxbPage.*,2500200,ROLE_ADMIN,bxzt</value>
+				<value>2500300,2500000,信件审核表,/xzxx/XxXjxxb/xjshPage.*,2500300,ROLE_ADMIN,sbjc</value>
+				<value>2500400,2500000,信件已审核,/xzxx/XxXjxxb/xjyshPage.*,2500400,ROLE_ADMIN</value>
+				<value>2500500,2500000,校长邮箱统计,/xzxx/XxXjxxb/toXxXjxxbtjPage.*,2500500,ROLE_ADMIN,sbsjtj</value>
+				<value>2500600,2500000,信件受理,/xzxx/XxXjxxb/xjslPage.*,2500600,ROLE_ADMIN,sbsgsp</value>
+				<value>2500700,2500000,信件已受理,/xzxx/XxXjxxb/xjyslPage.*,2500700,ROLE_ADMIN,cdgl</value>
+		</util:list>
+</beans>

@@ -1,0 +1,213 @@
+.tclist
+{
+	border-top:#eee solid 1px;
+	border-left:#eee solid 1px;
+	border-right:#eee solid 1px;
+	border-bottom:#ccc solid 1px;
+	border-radius:5px;
+	background:#fff;
+	padding:1em;
+	margin-bottom:.5em;
+}
+.tcheader
+{
+	overflow:hidden;
+	margin-bottom:1em;
+	float:left;
+}
+.tcheadimg
+{
+	width:40px;
+	height:40px;
+	border-radius:.5em;
+}
+.tctotal
+{
+	color:#888;
+	background:#fff;
+	border-bottom:#fff solid 1px;
+}
+.tctotalnum
+{
+	font-size:1.5em;
+	color:#0e74c1;
+	font-weight:bold;
+}
+.tctotal_left
+{
+	float:left;
+	width:50%;
+	text-align:center;
+	padding:1em 0em 1em 0em;
+	border-right:#ddd solid 1px;
+	border-bottom:#ddd solid 1px;
+}
+.tctotal_right
+{
+	border-bottom:#ddd solid 1px;
+	padding:1em 0em 1em 50%;
+	text-align:center;
+}
+.tccontent
+{
+	font-size:13px;
+	padding-left:50px;
+}
+.tctitle
+{
+	color:#000;
+	font-weight:bold;
+	font-size:14px;
+	margin-top:5px;
+}
+.tctime
+{
+	font-size:.7em;
+	color:#ccc;
+	margin-top:5px;
+}
+.tctext
+{
+	color:#888;
+	margin-top:.5em;
+}
+.tcbutton
+{
+	text-align:right;
+	margin-top:1em;
+	margin-bottom:.5em;
+}
+	.tcbutton a
+	{
+		margin-left:1em;
+		color:#0e74c1;
+		text-decoration:none;
+	}
+	.tcbutton img
+	{
+		width: 1em;
+		height: 1.2em;
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		vertical-align: bottom;
+	}
+.tcreply
+{
+	font-size:13px;
+	padding-top:1em;
+	border-top:#eee solid 1px;
+}
+.tcreplaylist
+{
+	margin-bottom:.3em;
+}
+.tcreplayname
+{
+	font-weight:bold;
+	margin-right:.5em;
+}
+.tcreplaymsg
+{
+	color:#888;
+}
+
+.tcmore
+{
+	margin-top:.7em;
+	border-top:#eee solid 1px;
+	padding-top:.5em;
+	color:#0e74c1;
+}
+	.tcmore a
+	{
+		color:#0e74c1;
+		text-decoration:none;
+	}
+.tcmorelist
+{
+	margin-top:1em;
+	text-align:center;
+}
+	.tcmorelist a
+	{
+		color:#888;
+		text-decoration:none;
+	}
+
+.tcwaitbar
+{
+	text-align:center;
+	color:#888;
+}
+
+.tcsubmit
+{
+	border-top:#ccc solid 1px;
+	background:#fff;
+	margin-top:1em;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	z-index:555;
+}
+.tcsubmittitle
+{
+	color:#0e74c1;
+	font-size:18px;
+	font-weight:bold;
+	margin:.5em;
+	text-align:center;
+}
+.tcsubmitbutton
+{
+	overflow:hidden;
+	margin:.5em 1em 1em .5em;
+}
+.tcsubmitbar
+{
+	display:none;
+	text-align:center;
+}
+	.tcsubmitbutton_num
+	{
+		padding-top:1em;
+		color:#888;
+		float:left;
+	}
+.tcsubmita
+{
+	color:#0e74c1;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+}
+	.tcsubmitb
+	{
+		font-size:16px;
+		font-weight:bold;
+		color:#fff;
+		text-decoration:none;
+		background:#0e74c1;
+		border-radius:5px;
+		outline:none;
+		float:right;
+		padding:.4em 1.5em .4em 1.5em;
+		margin-left:.5em;
+	}
+	.tcsubmit img
+	{
+		width:16px;
+		height:16px;
+		padding:0px;
+		margin:0px;
+		border:0px;
+	}
+	.tcsubmit textarea
+	{
+		display:inline-block;
+		width:95%;
+		margin:0em .5em 0em .5em;
+		border:#ccc solid 1px;
+		border-radius:5px;
+	}

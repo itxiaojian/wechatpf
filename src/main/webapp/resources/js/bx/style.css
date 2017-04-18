@@ -1,0 +1,30 @@
+/*报修系统*/
+*,ul,li,input,a{ margin:0px; padding:0px; list-style:none; font-family:'微软雅黑'; text-decoration:none; }
+.top{ width:100%; height:85px; position:relative; overflow:hidden;}
+.top img{ position:absolute; left:50%; margin-left:-960px;}
+.banner{ width:100%; height:300px; background:url(image/banner.png) no-repeat center -300%; margin-top:20px;}
+.banner_box{ width:980px; margin-left:auto; margin-right:auto;}
+.search_box{ width:263px; height:322px; background:url(image/search.png) no-repeat center; float:right;}
+.search_box li{ font-size:14px; margin-left:20px; margin-top:20px;}
+.search_box input{ border-radius:30px; border:1px solid #94cfff; text-indent:16px; width:135px;}
+.search_box select{width:135px;border-radius:30px;border:1px solid #94cfff;}
+.search_btn{ width:220px; height:40px; background-color:#7cade2;border-radius:30px; text-indent:10px; line-height:40px; color:#fff; font-size:18px; float:left;cursor:pointer;margin-right:25px; }
+.search_btn:hover{ background-color:#ed9340}
+.cha{ padding-top:6px;float:left; margin-left:65px;}
+.GN_btn{ width:70px; height:70px; background-color:#94cfff; clear:both; border-radius:50%; clear:both; margin-left:20px; text-align:center; line-height:40px;cursor:pointer;}
+.GN_btn img{ margin-left:3px; margin-top:-5px; float:left}
+.GN_btn:hover{color:#ed9340}
+.main{ width:100%;overflow:hidden;}
+.main_box{width:980px; margin-left:auto; margin-right:auto;}
+.wxts{ border-bottom:1px solid #b2cdec; line-height:60px;}
+.biao{ margin-top:30px;}
+.biao li{ width:100%; height:30px;line-height:30px; text-align:center; font-size:14px;}
+.biao span{ float:left;}
+.biao a:hover{ color:#ed9340}
+.tab{ margin-top:20px; line-height:30px;}
+.tab span{ float:right; margin-left:10px;}
+.fanye{ width:70px; height:30px; background-color:#ecf4fe; text-align:center; line-height:30px;}
+.fanye:hover{ background-color:#b2cdec;color:#fff;cursor:pointer; }
+.foot{ width:100%;overflow:hidden; background-color:#ccc;margin-top:30px;}
+.foot_box{width:980px; height:30px; margin-left:auto; margin-right:auto; color:#fff; line-height:30px; text-align:center; font-size:12px; }
+/*详细界面*/

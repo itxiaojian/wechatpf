@@ -1,0 +1,269 @@
+
+form.jqtransformdone label {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+form.jqtransformdone div.rowElem {
+    clear: both;
+    padding: 4px 0;
+}
+button.jqTransformButton {
+    background-color: transparent;
+    border: medium none;
+    cursor: pointer;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: auto;
+}
+:first-child + html button.jqTransformButton[type] {
+}
+button.jqTransformButton span {
+    background: transparent url("img/btn_right.gif") no-repeat scroll right top;
+    display: block;
+    float: left;
+    height: 33px;
+    margin: 0;
+    padding: 0 4px 0 0;
+}
+button.jqTransformButton span span {
+    background: transparent url("img/btn_left.gif") no-repeat scroll left top;
+    color: #333;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 33px;
+    line-height: 13px;
+    padding: 10px 4px 0 8px;
+    text-decoration: none;
+}
+button.jqTransformButton_hover span span {
+    background-position: left -33px;
+}
+button.jqTransformButton_hover span {
+    background-position: right -33px;
+}
+button.jqTransformButton_click span span {
+    background-position: left -66px;
+}
+button.jqTransformButton_click span {
+    background-position: right -66px;
+}
+* html button.jqTransformButton {
+    height: 33px;
+}
+* button.jqTransformButton span span {
+    height: 25px;
+}
+* + html button.jqTransformButton {
+    height: 33px;
+}
+* + button.jqTransformButton span span {
+    height: 25px;
+}
+.jqTransformInputWrapper {
+    background: transparent url("img/input/input_text_left.gif") no-repeat scroll left top;
+    float: left;
+    height: 31px;
+    padding: 0;
+}
+.jqTransformInputInner {
+    background: transparent url("img/input/input_text_right.gif") no-repeat scroll right top;
+    margin: 0;
+    padding: 0;
+}
+.jqTransformInputInner div {
+    height: 31px;
+    margin: 0 0 0 8px;
+}
+.jqTransformInputInner div input {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #404040;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 31px;
+    line-height: 18px;
+    margin: 0;
+    padding: 8px 0 0;
+    vertical-align: middle;
+}
+* html .jqTransformInputInner div input {
+    height: 24px;
+    margin: 0 0 0 -8px;
+    padding: 6px 0 0;
+}
+* + html .jqTransformInputInner div input {
+    height: 24px;
+    margin-left: -10px;
+    padding: 6px 0 0;
+}
+.jqTransformInputWrapper_hover {
+    background-position: left -31px;
+}
+.jqTransformInputWrapper_hover div.jqTransformInputInner {
+    background-position: right -31px;
+}
+.jqTransformInputWrapper_focus {
+    background-position: left -62px;
+}
+.jqTransformInputWrapper_focus div.jqTransformInputInner {
+    background-position: right -62px;
+}
+.jqTransformSafari .jqTransformInputInner div {
+    margin: 0 8px;
+    overflow: hidden;
+    position: relative;
+}
+.jqTransformSafari .jqTransformInputInner div input {
+    height: 42px;
+    left: -2px;
+    padding-left: 4px;
+    position: absolute;
+    top: -10px;
+}
+table.jqTransformTextarea td#jqTransformTextarea-mm textarea {
+    font-size: 12px;
+    line-height: 16px;
+}
+table.jqTransformTextarea td {
+    font-size: 1px;
+    height: 5px;
+    line-height: 1px;
+    margin: 0;
+    padding: 0;
+    width: 5px;
+}
+table.jqTransformTextarea {
+}
+table.jqTransformTextarea tr {
+}
+table.jqTransformTextarea textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+table.jqTransformTextarea .jqTransformSafariTextarea div {
+    border: 0 solid red;
+    overflow: hidden;
+    position: relative;
+}
+table.jqTransformTextarea .jqTransformSafariTextarea textarea {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    left: -10px;
+    padding: 10px;
+    position: absolute;
+    resize: none;
+    top: -10px;
+}
+.jqTransformRadioWrapper {
+    display: inline-block;
+    margin: 0 4px;
+    top: 7px;
+    vertical-align: middle;
+}
+.jqTransformRadio {
+    background: transparent url("./radio.png") no-repeat scroll center top;
+    display: block;
+    height: 16px;
+    vertical-align: middle;
+    width: 18px;
+}
+td .jqTransformRadioWrapper {
+    cursor: pointer;
+    display: block;
+    float: inherit;
+    margin: 0 auto;
+    width: 20px;
+}
+span.jqTransformCheckboxWrapper {
+    display: inline-block;
+    margin: 0 4px;
+    top: 7px;
+    vertical-align: middle;
+}
+a.jqTransformCheckbox {
+    background: transparent url("./checkbox.png") no-repeat scroll center top;
+    display: block;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    width: 18px;
+}
+td a.jqTransformCheckbox {
+    z-index: -1;
+}
+td span.jqTransformCheckboxWrapper {
+    cursor: pointer;
+    display: block;
+    float: inherit;
+    margin: 0 auto;
+    width: 20px;
+}
+a.jqTransformChecked {
+    background-position: center bottom;
+}
+.jqTransformSelectWrapper {
+    background: rgba(0, 0, 0, 0) url("img/select_left.gif") no-repeat scroll left top;
+    float: left;
+    height: 31px;
+    position: relative;
+    width: 45px;
+}
+.jqTransformSelectWrapper div span {
+    cursor: pointer;
+    float: none;
+    font-size: 12px;
+    height: 31px;
+    line-height: 15px;
+    overflow: hidden;
+    padding: 8px 0 0 7px;
+    position: absolute;
+    white-space: nowrap;
+}
+.jqTransformSelectWrapper a.jqTransformSelectOpen {
+    background: rgba(0, 0, 0, 0) url("img/select_right.gif") no-repeat scroll center center;
+    display: block;
+    height: 31px;
+    position: absolute;
+    right: 0;
+    width: 31px;
+}
+.jqTransformSelectWrapper ul {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    height: 150px;
+    left: 0;
+    list-style: outside none none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    width: 43px;
+    z-index: 10;
+}
+.jqTransformSelectWrapper ul a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    font-size: 12px;
+    padding: 5px;
+    text-decoration: none;
+}
+.jqTransformSelectWrapper ul a.selected {
+    background: #ededed none repeat scroll 0 0;
+    color: #333;
+}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+    background: #3582c4 none repeat scroll 0 0;
+    color: #fff;
+}
+.jqTransformHidden {
+/*     display: table; */
+}

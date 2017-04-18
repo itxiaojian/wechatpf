@@ -1,0 +1,29 @@
+*,select,option,body,ul,li,a{font-family:'寰蒋闆呴粦';margin:0px; padding:0px; list-style:none; text-decoration:none;}
+body{ margin:0; padding:0px; overflow-x:hidden}
+.phone_01{ width:100%; height:100%; overflow:hidden;}
+.logo{ width:100%; height:150px; background-color:#e5e5e5; position:absolute; top:0; left:0;overflow:hidden; font-size:36px; line-height:120px;}
+.top_01{ width:100%; height:120px; background-color:#e5e5e5; position:absolute; top:0; left:0;overflow:hidden; font-size:36px; line-height:120px;}
+.top_01 select{ font-size:36px; width:300px; height:50px; border-radius:5px; color:#2e87d3;}
+.top_01 span{ float:left;}
+.top_01 img{ margin-top:15%; display:block; float:left;}
+.main_01{width:100%; position:absolute; top:120px; left:0; bottom:98px; background-color:#f2f2f2; overflow:auto;}
+.main_02{width:100%; position:absolute; top:150px; left:0; bottom:98px; background-color:#fff; overflow:auto;}
+.main_01_msg{width:80%; margin-left:10%; margin-right:10%; background-color:#fff; margin-top:5%; float:left;}
+.CX_title_01{ width:100%; height:60px; background-color:#23bcfc; color:#fff; line-height:60px; text-align:center; font-size:36px;}
+.GG_msg_01 li{ width:100%; height:100px; font-size:34px; line-height:100px; }
+.GG_msg_01 img{ float:left; margin-top:3%; margin-left:5%;}
+.CJ_msg_01{ padding-top:10px;}
+.CJ_msg_01 li{ height:100px; font-size:34px; line-height:100px; float:left; text-align:center; border-bottom:#e5e5e5 1px solid;}
+.CJ_msg_02 li{font-size:34px; float:left; width:100%; text-indent:34px; line-height:100px;}
+.CJ_msg_02 span{ float:left; color:#2e87d3;}
+.CJ_msg_01 img{ float:left; margin-top:12%; margin-left:16%;}
+.photo_GR{ position:absolute; top:18%; right:2%;}
+.foot_01{width:100%; height:98px; background-color:#ccc;position:absolute; bottom:0; left:0; overflow:hidden}
+.wrap{ width:100%; overflow:hidden;}
+.YM_iocn{width:100%; overflow:hidden;}
+.YM_iocn li{ width:25%; text-align:center; float:left; font-size:36px; color:#666; line-height:100px; }
+.YM_iocn img{ display:block; margin-left:30%; margin-top:15%;}
+.chahua{ position:absolute; bottom:6%; right:0%;}
+.FH_btn{ position:absolute; top:1.8%; right:3.5%;}
+a{ text-decoration:none;}
+

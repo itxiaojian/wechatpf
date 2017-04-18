@@ -1,0 +1,39 @@
+package com.sliu.framework.app.wsh.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.sliu.framework.app.common.dao.hibernate4.HibernateBaseDaoImpl;
+import com.sliu.framework.app.common.dao.jdbc.NamedParameterJdbcPager;
+import com.sliu.framework.app.wsh.model.SysFjglzpq;
+
+/** 
+ * @author:wangxiangyang 
+ * @version 创建时间：2016年9月8日
+ * 附件管理
+ */
+@Repository
+public class ShFjglzpqDao extends HibernateBaseDaoImpl<SysFjglzpq, Long>{
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+	
+	@Autowired
+	private NamedParameterJdbcPager jdbcPager;
+	
+	/**
+	 * 获取状态
+	 * @author 状态
+	 * @date 2015年8月07日
+	 * @return
+	 */
+	public List<Map<String,Object>> getImgId(String fname){
+		String sql=	"select id from sys_fjglzpq where fname='"+fname+"'";
+		return jdbcTemplate.queryForList(sql);
+	}
+
+}

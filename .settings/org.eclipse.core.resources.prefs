@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/main/resources/jdbc.properties=UTF-8
+encoding//src/main/resources/springsecurity.properties=UTF-8
+encoding//src/main/webapp/WEB-INF/views/wzy/zhuye.jsp=UTF-8
+encoding//src/main/webapp/jsp/css/index.css=UTF-8
+encoding//src/main/webapp/resources/css/wfw.css=UTF-8
+encoding//src/main/webapp/resources/css/wzy/style.css=UTF-8
+encoding//src/main/webapp/resources/css/zhuye.css=gbk
+encoding//src/main/webapp/resources/js/ux/newdatetime/\u4F7F\u7528\u8BF4\u660E.txt=UTF-8
+encoding//src/main/webapp/resources/js/weixin/MicroSite/yyucadapter.js=gbk
+encoding//src/main/webapp/resources/js/weixin/view=gbk
+encoding//src/main/webapp/resources/umeditor/themes/default/css/umeditor.css=UTF-8
+encoding//src/main/webapp/system/login/login.jsp=UTF-8
+encoding/<project>=UTF-8

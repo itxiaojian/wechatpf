@@ -1,0 +1,872 @@
+
+.wl-icon1, .wl-icon2, .wl-icon3, .wl-orderNo, .wl-expressCodeOk, .wl-mobile, .wl-feedback, .wl-stream-text {
+    background: rgba(0, 0, 0, 0) url("//gtd.alicdn.com/tps/i1/T1Zh_fXllhXXaHIHjJ-35-287.png") no-repeat scroll -99em -99em;
+}
+.detaill-qrcode {
+    display: none;
+}
+.order-detail {
+    border: 1px solid #e2e2e2;
+    color: #333;
+    font: 12px/1.5 tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+    margin: 0 auto;
+    width: 990px;
+}
+.order-detail .tmsbox {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 990px;
+}
+.order-detail .hidden {
+    visibility: hidden;
+}
+.order-detail .detail-title {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+}
+.order-detail .detail-title .indent {
+    display: block;
+    text-indent: 88px;
+}
+.order-detail .detail-content {
+    padding: 0 58px;
+}
+.order-detail em {
+    font-style: normal;
+    font-weight: 700;
+}
+.order-detail a {
+    color: #0077c9;
+    cursor: pointer;
+}
+.order-detail p {
+    margin: 0;
+}
+.order-detail ul {
+    list-style: outside none none;
+    padding: 0;
+}
+.order-detail .nav-package {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 16px;
+    height: 38px;
+    margin: 0 auto;
+}
+.order-detail .nav-package li {
+    border-right: 1px solid #e2e2e2;
+    float: left;
+    height: 29px;
+    line-height: 28px;
+    margin: 5px 0;
+    text-align: center;
+    width: 100px;
+}
+.order-detail .nav-package .current {
+    background-color: #fff;
+    border-left: 1px solid #e2e2e2;
+    height: 39px;
+    line-height: 38px;
+    margin: 0 0 0 -1px;
+}
+.order-detail .nav-package a {
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+#content {
+    color: #333;
+    margin: 0 auto 10px;
+    width: 990px;
+}
+.fright {
+    float: right;
+}
+.fleft {
+    float: left;
+}
+.tb-path {
+    line-height: 24px;
+    margin: 0 auto 10px;
+    width: 990px;
+}
+.wl-mobile, .wl-feedback {
+    background-color: #f9fbfc;
+    border: 1px solid #c6dde7;
+    display: inline-block;
+    padding: 0 10px 0 25px;
+}
+.wl-mobile {
+    background-position: -14px -229px;
+}
+.wl-feedback {
+    background-position: -14px -209px;
+}
+.tms-row {
+    margin: 0 auto;
+    width: 990px;
+}
+.tms-box {
+    overflow: hidden;
+    padding-top: 10px;
+}
+.tms-row .tms-content-left {
+    float: left;
+    height: 120px;
+    width: 600px;
+}
+.tms-row .tms-content-right {
+    float: right;
+    height: 120px;
+    width: 380px;
+}
+.detail-progressbar {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1jUjxIpXXXXbXXpXXXXXXXXXX.png") no-repeat scroll 4px -110px;
+    margin: 35px auto 0;
+    overflow: hidden;
+    width: 852px;
+}
+.detail-progressbar li {
+    color: #909090;
+    float: left;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 257px;
+}
+.detail-progressbar .text {
+    display: none;
+    font-family: simsun;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 4px;
+    text-align: center;
+    width: 52px;
+}
+.detail-progressbar .text i {
+    display: none;
+}
+.detail-progressbar .last, .detail-progressbar .last .text {
+    width: 80px;
+}
+.detail-progressbar .step-1-done, .detail-progressbar .step-2-done, .detail-progressbar .step-3-done, .detail-progressbar .step-4-done {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1jUjxIpXXXXbXXpXXXXXXXXXX.png") no-repeat scroll 4px 3px;
+    color: #ff5a00;
+}
+.detail-progressbar .step-1-done {
+    background-position: 4px 3px;
+}
+.detail-progressbar .step-2-done {
+    background-position: -253px 3px;
+}
+.detail-progressbar .step-3-done {
+    background-position: -515px 3px;
+}
+.detail-progressbar .step-4-done {
+    background-position: -760px 3px;
+}
+.detail-progressbar .step-1-done .text i, .detail-progressbar .step-2-done .text i, .detail-progressbar .step-3-done .text i, .detail-progressbar .step-4-done .text i {
+    display: inline;
+}
+.detail-progressbar .step-1-current {
+    background: rgba(0, 0, 0, 0) url("TB1Bf2xIpXXXXb0XpXXXXXXXXXX.gif") no-repeat scroll 0 0;
+}
+.detail-progressbar .step-2-current {
+    background: rgba(0, 0, 0, 0) url("TB1WlJ3HpXXXXaPXFXXw5AoUXXX-172-100.gif") no-repeat scroll 0 0;
+}
+.detail-progressbar .step-3-current {
+    background: rgba(0, 0, 0, 0) url("TB1pnF5HpXXXXcyXpXXw5AoUXXX-172-100.gif") no-repeat scroll 0 0;
+}
+.detail-progressbar .step-4-current {
+    background: rgba(0, 0, 0, 0) url("TB1sepYHpXXXXX6aXXXw5AoUXXX-172-100.gif") no-repeat scroll 0 0;
+}
+.detail-panel .panel-package {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.detail-panel .panel-package .arrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #fff #fff #f3f3f3;
+    border-image: none;
+    border-style: solid;
+    border-width: 13px;
+    height: 0;
+    left: 35px;
+    position: absolute;
+    top: -26px;
+    width: 0;
+    z-index: -1;
+}
+.detail-panel .panel-package .arrow-0, .detail-panel .panel-package .arrow-1 {
+    left: 35px;
+}
+.detail-panel .panel-package .arrow-2, .detail-panel .panel-package .arrow-3, .detail-panel .panel-package .arrow-4, .detail-panel .panel-package .arrow-25 {
+    left: 290px;
+}
+.detail-panel .panel-package .arrow-6, .detail-panel .panel-package .arrow-7, .detail-panel .panel-package .arrow-8 {
+    left: 550px;
+}
+.detail-panel .panel-package .arrow-5 {
+    left: 808px;
+}
+.detail-panel .panel-package .tips {
+    color: #ee5051;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.detail-panel .panel-package .icon-delay {
+    background: rgba(0, 0, 0, 0) url("//gtd.alicdn.com/tps/i4/TB1PbhDHpXXXXceaXXXoq9FFpXX-18-18.png") no-repeat scroll left top;
+    display: inline-block;
+    float: left;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    width: 18px;
+}
+.detail-panel .panel-package .package-title {
+    border-bottom: 1px solid #e7e7e7;
+    font-family: "Hiragino Sans GB","Microsoft YaHei";
+    font-size: 18px;
+    margin: 0 14px 0 25px;
+    padding: 14px 0 14px 12px;
+}
+.detail-panel .panel-package .package-title em {
+    color: #ff5a00;
+    font-style: normal;
+    margin: 0 5px;
+    padding: 0;
+}
+.detail-panel .panel-package .package-exception {
+    font-size: 22px;
+    height: 280px;
+    line-height: 1.2em;
+    margin: 0 auto;
+    width: 420px;
+}
+.detail-panel .panel-package .package-exception .pic {
+    display: inline-block;
+    float: left;
+    height: 160px;
+    margin-top: 60px;
+    vertical-align: middle;
+    width: 120px;
+}
+.detail-panel .panel-package .package-exception .text {
+    float: left;
+    margin-left: 10px;
+    margin-top: 110px;
+}
+.package-status {
+    padding: 18px 0 0;
+}
+.package-status .status-list {
+    font-size: 12px;
+    line-height: 30px;
+    list-style: outside none none;
+    margin: -9px 0 0 12px;
+    padding: 0 0 0 10px;
+}
+.package-status .status-list li {
+    border-left: 1px solid #d9d9d9;
+    height: 30px;
+}
+.package-status .status-list li::before {
+    background-color: #d9d9d9;
+    border: 3px solid #f3f3f3;
+    border-radius: 5px;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    margin-left: -6px;
+    margin-right: 10px;
+    width: 5px;
+}
+.package-status .status-list .date {
+    font-family: Arial;
+    font-weight: 700;
+    margin-right: 8px;
+}
+.package-status .status-list .time {
+    margin-left: 5px;
+    margin-right: 28px;
+}
+.package-status .status-list .week {
+    font-weight: 700;
+}
+.package-status .status-list .latest::before {
+    background-color: #fe4300;
+    border-color: #f8e9e4;
+}
+.package-status .status-list em {
+    color: #ff4207;
+}
+.package-status .status-list .hidden {
+    display: inline;
+}
+.package-status .status-box {
+    overflow: hidden;
+}
+.package-status .status-action {
+    color: #ff4200;
+    padding-right: 10px;
+    text-align: right;
+}
+.package-status .status-action .action-handler {
+    cursor: pointer;
+}
+.package-status .status-info {
+    background-color: #f3f3f3;
+    color: #959595;
+    line-height: 28px;
+    margin-left: 22px;
+    margin-right: 10px;
+    margin-top: -10px;
+    overflow: hidden;
+    text-align: right;
+}
+.package-status .status-info .info-inner {
+    border-top: 1px solid #e8e8e8;
+    height: 28px;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+.package-cainiao {
+    border-top: 1px solid #e7e7e7;
+    color: #333;
+    line-height: 24px;
+    margin-left: 40px;
+    margin-right: 12px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+.package-cainiao .cainiao-logo {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/i4/TB1CKBhHpXXXXb9XFXXIpPTHFXX-60-60.jpg") no-repeat scroll 0 0;
+    float: left;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 60px;
+}
+.package-cainiao .cainiao-content {
+    padding-left: 170px;
+}
+.package-cainiao a {
+    margin: 0 10px;
+}
+.panel-order {
+    border-top: 1px solid #e7e7e7;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 20px 0;
+}
+.panel-order .order-row {
+    margin-left: -10px;
+}
+.panel-order .em {
+    font-weight: 700;
+    margin-right: 10px;
+}
+.panel-order .label {
+    margin-left: 10px;
+}
+.panel-order .order-list {
+    list-style: outside none none;
+    margin: 15px 0 0;
+    overflow: hidden;
+    padding: 0;
+}
+.panel-order .order-list li {
+    float: left;
+    margin-right: 40px;
+}
+.panel-order .order-list .pic {
+    border: 1px solid #eee;
+    display: block;
+    height: 59px;
+    line-height: 59px;
+    overflow: hidden;
+    width: 59px;
+}
+.panel-order .order-list .pic img {
+    vertical-align: middle;
+    width: 100%;
+}
+.panel-banner {
+    border-top: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding-bottom: 28px;
+    position: relative;
+}
+.panel-banner .numeric {
+    color: #2dc1dc;
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    right: 375px;
+    text-align: center;
+    top: 68px;
+    width: 60px;
+}
+.panel-map {
+    border-top: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding-bottom: 28px;
+    padding-top: 40px;
+}
+.panel-map .map-gaode {
+    background-color: #ccc;
+    float: left;
+    height: 400px;
+    width: 500px;
+}
+.panel-map .map-info {
+    background-color: #6ec2f5;
+    color: #fff;
+    float: right;
+    font-weight: 700;
+    height: 400px;
+    line-height: 30px;
+    width: 374px;
+}
+.panel-map .map-info .content {
+    font-size: 18px;
+    margin: 106px auto 0;
+    width: 215px;
+}
+.panel-map .map-info .name {
+    font-size: 48px;
+    margin: 14px 0;
+}
+.wl-topad {
+    height: 120px;
+    overflow: hidden;
+}
+.wl-topad a {
+    display: block;
+}
+.wl-topad .ks-switchable-nav li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 2px;
+    text-align: center;
+    width: 16px;
+}
+.wl-topad .ks-switchable-nav {
+    bottom: 5px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+}
+.wl-topad .ks-switchable-nav li.ks-active {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+.wl-topad img {
+    height: 120px;
+}
+.hdbox-radius {
+    border-radius: 1px;
+}
+.package-status .status-list em.normal {
+    font-weight: 400;
+}
+.package-status .status-list .text {
+    display: inline-block;
+    line-height: 1.3em;
+    vertical-align: text-top;
+    width: 653px;
+}
+.package-status .status-list li {
+    height: auto;
+    min-height: 30px;
+}
+.package-status .status-list .date {
+    width: 62px;
+}
+.package-status .status-list .week {
+    width: 24px;
+}
+.package-status .status-list .time {
+    width: 48px;
+}
+.tms-block {
+    border: 1px solid #e5e5e5;
+    margin: 10px auto;
+    width: 988px;
+}
+#p4p_ad .c2015-4-129458-global {
+    border: medium none;
+}
+.tms-block .tms-box {
+    padding-top: 0;
+}
+.detail-progressbar li {
+    position: relative;
+}
+.progressbar-cainiao {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1zyTuIpXXXXXvXFXXXXXXXXXX.png") no-repeat scroll 4px -110px;
+    margin: 35px auto 0;
+    overflow: hidden;
+    width: 852px;
+}
+.progressbar-cainiao li {
+    float: left;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 192px;
+}
+.progressbar-cainiao .step-1-done, .progressbar-cainiao .step-2-done, .progressbar-cainiao .step-3-done, .progressbar-cainiao .step-4-done {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1zyTuIpXXXXXvXFXXXXXXXXXX.png") no-repeat scroll 4px 3px;
+}
+.progressbar-cainiao .step-1-done {
+    background-position: 4px 3px;
+}
+.progressbar-cainiao .step-2-done {
+    background-position: -190px 3px;
+}
+.progressbar-cainiao .step-3-done {
+    background-position: -382px 3px;
+}
+.progressbar-cainiao .step-4-done {
+    background-position: -576px 3px;
+}
+.progressbar-cainiao .step-1-current {
+    background: rgba(0, 0, 0, 0) url("//gtd.alicdn.com/tps/i4/TB1XNx_HpXXXXXYXXXXw5AoUXXX-172-100.gif") no-repeat scroll 0 0;
+}
+.progressbar-cainiao .step-2-current {
+    background: rgba(0, 0, 0, 0) url("//gtd.alicdn.com/tps/i2/TB1WlJ3HpXXXXaPXFXXw5AoUXXX-172-100.gif") no-repeat scroll 0 0;
+}
+.progressbar-cainiao .step-3-current {
+    background: rgba(0, 0, 0, 0) url("//gtd.alicdn.com/tps/i2/TB1pnF5HpXXXXcyXpXXw5AoUXXX-172-100.gif") no-repeat scroll 0 0;
+}
+.progressbar-cainiao .step-4-current {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB15QFQIpXXXXbmXpXXXXXXXXXX.gif") no-repeat scroll 0 0;
+}
+.progressbar-cainiao .step-5-current {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1uuztIpXXXXXSXFXXXXXXXXXX.gif") no-repeat scroll 0 0;
+}
+.progressbar-cainiao .last, .progressbar-cainiao .last .text {
+    width: 82px;
+}
+.progressbar-cainiao .arrow, .detail-progressbar .arrow {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #fff #fff #f3f3f3;
+    border-image: none;
+    border-style: solid;
+    border-width: 13px;
+    bottom: -22px;
+    height: 0;
+    left: 28px;
+    position: absolute;
+    width: 0;
+    z-index: -1;
+}
+#progressbar {
+    min-height: 122px;
+}
+#progressbar .progressbar-cainiao, #progressbar .detail-progressbar {
+    padding-bottom: 22px;
+}
+.detail-panel .panel-package .arrow {
+    display: none;
+}
+#progressbar {
+    position: relative;
+}
+#progressbar .guoguo {
+    height: 90px;
+    left: 6px;
+    position: absolute;
+    top: -17px;
+    width: 90px;
+}
+#progressbar .guoguo-step-1, #progressbar .guoguo-step-2, #progressbar .guoguo-step-3, #progressbar .guoguo-step-4 {
+    display: block;
+}
+#progressbar .guoguo-step-2 {
+    left: 263px;
+}
+#progressbar .guoguo-step-3 {
+    left: 520px;
+}
+#progressbar .guoguo-step-4 {
+    left: 776px;
+}
+#progressbar.cainiao .guoguo-step-3 {
+    left: 391px;
+}
+#progressbar.cainiao .guoguo-step-2 {
+    left: 190px;
+}
+#progressbar.cainiao .guoguo-step-4 {
+    left: 574px;
+}
+#progressbar.cainiao .guoguo-step-5 {
+    left: 776px;
+}
+.guoguo-mask, .guoguo-popdiv {
+    background-color: #000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000001;
+}
+.guoguo-popdiv {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1zyN5IpXXXXXcXpXXXXXXXXXX.png") no-repeat scroll left top;
+    height: 426px;
+    left: 50%;
+    margin-left: -213px;
+    margin-top: -213px;
+    opacity: 1;
+    top: 50%;
+    width: 426px;
+    z-index: 100000002;
+}
+.guoguo-popdiv .popdiv-close {
+    cursor: pointer;
+    height: 45px;
+    position: absolute;
+    right: 50px;
+    top: 28px;
+    width: 45px;
+}
+.guoguo-show {
+    display: block;
+}
+.progressbar-wms {
+    background-image: url("TB1k9PvIpXXXXcEXpXXXXXXXXXX.png");
+}
+.progressbar-wms .step-1-done, .progressbar-wms .step-2-done, .progressbar-wms .step-3-done, .progressbar-wms .step-4-done {
+    background-image: url("TB1k9PvIpXXXXcEXpXXXXXXXXXX.png");
+}
+.progressbar-wms .step-1-current {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1g5PxIpXXXXbCXpXXXXXXXXXX.gif") no-repeat scroll 0 0;
+}
+.cainiao-progressbar-wms {
+    background-image: url("//img.alicdn.com/tps/TB1iHPoIpXXXXcsXFXXXXXXXXXX.png");
+}
+.cainiao-progressbar-wms .step-1-done, .cainiao-progressbar-wms .step-2-done, .cainiao-progressbar-wms .step-3-done, .cainiao-progressbar-wms .step-4-done {
+    background-image: url("//img.alicdn.com/tps/TB1iHPoIpXXXXcsXFXXXXXXXXXX.png");
+}
+.cainiao-progressbar-wms .step-1-current {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB1g5PxIpXXXXbCXpXXXXXXXXXX.gif") no-repeat scroll 0 0;
+}
+.order-detail {
+    position: relative;
+}
+.detail-complaint {
+    font-size: 14px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.detail-complaint a {
+    background: #fff url("//img.alicdn.com/tps/TB13cxCIFXXXXchXpXXXXXXXXXX.png") no-repeat scroll 8px 8px;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    color: #ff4200;
+    display: block;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    text-indent: 24px;
+    width: 88px;
+}
+#modifyYuyue {
+    background-color: #ff4200;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 70px;
+}
+.dialog-mask, .dialog-main {
+    background-color: #000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000001;
+}
+.dialog-main {
+    background-color: #fff;
+    border-radius: 3px;
+    display: none;
+    height: auto;
+    left: 50%;
+    margin-left: -213px;
+    margin-top: -213px;
+    opacity: 1;
+    overflow: hidden;
+    top: 50%;
+    width: 481px;
+    z-index: 100000002;
+}
+.dialog-close {
+    color: #ff5a00;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+#iFrame1 {
+    border: medium none;
+    height: auto;
+    width: 481px;
+}
+.package-sign {
+    margin-top: -8px;
+    padding: 20px 0 0 218px;
+    position: relative;
+}
+.package-sign::before {
+    background-color: #f3f3f3;
+    content: "";
+    display: block;
+    float: left;
+    height: 20px;
+    margin-left: -218px;
+    margin-top: -23px;
+    width: 136px;
+}
+.package-sign .fn-left {
+    float: left;
+}
+.package-sign .fn-right {
+    float: right;
+}
+.package-sign .form {
+    border-top: 1px solid #e7e7e7;
+    display: none;
+    width: 440px;
+}
+.package-sign .row-radio {
+    height: 18px;
+    line-height: 18px;
+    padding: 5px 0;
+}
+.package-sign .row-radio input {
+    margin: 0;
+    vertical-align: text-top;
+}
+.package-sign .button {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    font-family: simsun;
+    height: 20px;
+    line-height: 18px;
+    padding: 0;
+    text-align: center;
+    width: 55px;
+}
+.package-sign .button-submit {
+    background-color: #ff5526;
+    color: #fff;
+}
+.package-sign .button-submit-disable {
+    opacity: 0.2;
+}
+.package-sign .textarea:focus {
+    outline: 0 none;
+}
+.package-sign input:focus {
+    outline: 0 none;
+}
+.package-sign .label-first {
+    margin-right: 30px;
+}
+.package-sign .unsign, .package-sign .showdetail {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-family: simsun;
+    font-size: 12px;
+    height: 18px;
+    text-align: center;
+    width: 100px;
+}
+.package-sign .showdetail {
+    width: 60px;
+}
+.package-sign .complete {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/tps/TB15JgkIFXXXXaaXVXXXXXXXXXX.png") no-repeat scroll left center;
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+}
+.package-sign .textarea {
+    border: 1px solid #ccc;
+    height: 62px;
+    padding: 3px;
+    resize: none;
+    width: 432px;
+}
+.package-sign .sign-info {
+    background-color: #fffef8;
+    border: 1px solid #f6d4a0;
+    display: none;
+    height: 88px;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    top: -108px;
+    width: 468px;
+}
+.package-sign .sign-info .info-arrow {
+    background: rgba(0, 0, 0, 0) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAHCAMAAAA74E03AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGQzEwRDk5RjFGQ0UxMUU1OUU4Mjg5ODU3RDVGQTMzRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGQzEwRDlBMDFGQ0UxMUU1OUU4Mjg5ODU3RDVGQTMzRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI5NzA4RjE0MUVBOTExRTU5RTgyODk4NTdENUZBMzNGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZDMTBEOTlFMUZDRTExRTU5RTgyODk4NTdENUZBMzNGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+B5H+8QAAABJQTFRF+uXE/fbo9ObR9tSg//748/PzOzQEoAAAAAZ0Uk5T//////8As7+kvwAAADVJREFUeNpMyEcCACAIAzCG/P/LWhklx4iD6CkqGQHm9er2I7u/tzt/dhrPZb/nrg7jxhVgALcxAnGqfU4eAAAAAElFTkSuQmCC") repeat scroll 0 0;
+    bottom: -7px;
+    height: 7px;
+    left: 245px;
+    position: absolute;
+    right: 100px;
+    width: 22px;
+}
+.package-sign .sign-info .info-header {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+.package-sign .sign-info .info-header input {
+    vertical-align: text-top;
+}

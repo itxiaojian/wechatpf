@@ -1,0 +1,627 @@
+
+body {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+html, button, input, select, textarea {
+    font-family: "Microsoft YaHei";
+}
+a {
+    outline: medium none;
+}
+a:focus {
+    outline: medium none;
+}
+.user-info-panel {
+    display: none;
+    height: 200px;
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    width: 400px;
+    z-index: 9999;
+}
+#start-menu {
+    background-color: black;
+    display: none;
+    height: 400px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+.main {
+    margin-top: 20px;
+    width: 100%;
+}
+#nav-bar-bg {
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0 0 4px #666;
+    z-index: 51;
+}
+.pre-overlay {
+    background-color: #ebebe9;
+    bottom: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    z-index: 20;
+}
+#real-content {
+    margin: auto;
+    min-height: 100%;
+    width: 100%;
+}
+#project-logo {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 155px;
+    margin: auto;
+    position: relative;
+    width: 1245px;
+    z-index: 30;
+}
+.project-logo-inner {
+    height: 155px;
+    position: absolute;
+    width: 100%;
+}
+.logo-img {
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    width: 1245px;
+}
+.logo-img-bg {
+    background-repeat: no-repeat;
+    height: 130px;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+}
+.index-link-banner {
+    background-repeat: repeat-x;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #666;
+    margin: auto;
+    position: relative;
+    width: 1245px;
+}
+.index-link-panel {
+    margin: auto;
+    position: relative;
+    width: 1210px;
+}
+#index-link-box {
+    height: 38px;
+    margin: auto;
+    max-width: 1210px;
+    z-index: 99999;
+}
+.index-link-bottom {
+    background-color: #dddddd;
+    height: 40px;
+    margin-top: 115px;
+    width: 100%;
+}
+.metrouicss .index-link-menu {
+    color: #999999;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    height: 38px;
+    line-height: 25px;
+    margin-right: 5px;
+}
+.link-box, .selected-link-box {
+    border-right: 1px solid #777;
+    box-sizing: border-box;
+    color: white;
+    float: left;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    height: 38px;
+    line-height: 38px;
+    max-width: 400px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.link-box {
+    color: white;
+}
+.link-box:hover, .link-box:active {
+    box-shadow: 0 0 2px #666 inset;
+    cursor: default;
+}
+.selected-link-box:hover, .selected-link-box:active {
+    box-shadow: 0 0 2px #666 inset;
+    cursor: default;
+}
+.selected-link-box {
+    box-shadow: 0 0 2px #666;
+}
+.selected-link-box span, .link-box span {
+    cursor: default;
+    height: 38px;
+    line-height: 38px;
+    text-align: right;
+}
+.active-area {
+    background-color: #aadddd;
+}
+.footer {
+    background-color: white;
+    border-top: 4px solid;
+    bottom: 0;
+    color: #999999;
+    font-size: 12px;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+}
+.metrouicss INPUT[type="button"], .metrouicss INPUT[type="submit"], .metrouicss button, .metrouicss .button {
+    border-radius: 3px;
+    color: white;
+    height: 30px;
+    margin: 0;
+    min-height: 0;
+    padding: 0 5px;
+}
+.metrouicss INPUT[type="button"]:hover, .metrouicss INPUT[type="submit"]:hover, .metrouicss button:hover, .metrouicss .button:hover {
+    color: white;
+}
+.metrouicss INPUT[type="button"]:active, .metrouicss INPUT[type="submit"]:active, .metrouicss button:active, .metrouicss .button:active {
+    box-shadow: 0 0 6px #000 inset;
+    color: white;
+}
+.ext-icon-down-arrow {
+    background-image: url("../images/c5.png");
+    background-position: -114px -33px;
+    height: 8px;
+    width: 8px;
+}
+.ext-icon-down-arrow-black {
+    background-image: url("../images/c5.png");
+    background-position: -114px 0;
+    height: 8px;
+    width: 8px;
+}
+.metrouicss .page.with-sidebar .page-region {
+    margin-left: 300px;
+}
+.metrouicss .page-sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+.metrouicss .page-sidebar a:hover, .metrouicss .page-sidebar a:active {
+    background-color: #e4e7ee !important;
+    color: #000000 !important;
+}
+.metrouicss .tile .brand > .text {
+    width: 90%;
+}
+.metrouicss .nav-bar {
+    display: block;
+    left: 0;
+    margin: 0;
+    min-width: 1250px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+.metrouicss .nav-bar-inner {
+    color: white;
+    height: 30px;
+    min-width: 1250px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+}
+.metrouicss #nav-bar-bg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.metrouicss #nav-colors {
+    margin: auto;
+    position: relative;
+    width: 1240px;
+}
+.metrouicss .element-group {
+    position: absolute;
+}
+.metrouicss .nav-bar .nav-bar-inner .element {
+    color: inherit;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    position: static !important;
+}
+.metrouicss .nav-bar .nav-bar-inner .element:hover {
+    background-color: #7b1524;
+    cursor: pointer;
+}
+.metrouicss .nav-bar .nav-bar-inner .element.brand, .metrouicss .nav-bar .nav-bar-inner a .element.brand {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+.metrouicss .nav-bar .nav-bar-inner .element img, .metrouicss .nav-bar .nav-bar-inner a .element img {
+    height: 100%;
+}
+.metrouicss .nav-bar .nav-bar-inner .element a, .metrouicss .nav-bar .nav-bar-inner a .element a {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    height: 30px;
+    line-height: 30px;
+}
+.metrouicss .nav-bar .nav-bar-inner [data-role="dropdown"] {
+    margin: 0 !important;
+}
+.metrouicss .dropdown-menu {
+    border: 2px solid #7b1524;
+    box-shadow: none;
+    color: black !important;
+}
+.metrouicss .dropdown-menu a {
+    color: black !important;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 20px;
+}
+.metrouicss .dropdown-menu li a:hover {
+    color: white !important;
+}
+.metrouicss .div-dropdown-menu {
+    background-color: #eeeeee;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    left: 0;
+    margin-top: 4px;
+    max-width: 1250px;
+    padding: 20px 0 0;
+    position: absolute;
+    top: 35px !important;
+    width: 100%;
+    z-index: 1;
+}
+.metrouicss .div-dropdown-menu-second {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 180px;
+}
+.metrouicss .div-dropdown-menu-second .second-title-selected, .metrouicss .div-dropdown-menu-second .second-title {
+    border-left: 3px solid #eeeeee;
+    color: #333333;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px;
+}
+.metrouicss .div-dropdown-menu-third {
+    margin-top: 10px;
+    width: 100%;
+}
+.metrouicss .div-dropdown-menu-third .third-title-selected, .metrouicss .div-dropdown-menu-third .third-title {
+    border-left: 3px solid #eeeeee;
+    color: #690003;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 0 5px;
+    width: 100%;
+}
+.metrouicss .div-dropdown-menu-third .third-title-selected:hover, .metrouicss .div-dropdown-menu-third .third-title:hover {
+    color: #59b4ea;
+}
+.metrouicss .split1 {
+    width: 10px;
+}
+.metrouicss .split2 {
+    width: 20px;
+}
+.metrouicss .pagebar {
+    margin: 3px;
+    padding-right: 10px;
+    text-align: right;
+}
+.metrouicss .pagebar a {
+    background-color: #cccccc;
+    color: #525252;
+    font-size: 12px;
+    margin: 2px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+.metrouicss .pagebar a:hover {
+    color: #ffffff;
+}
+.metrouicss .pagebar a:active {
+    background-color: #000000;
+    color: #ffffff;
+}
+.metrouicss .pagebar .current {
+    color: #fff;
+    font-size: 12px;
+    margin: 2px;
+    padding: 2px 5px;
+}
+.metrouicss .pagebar .disabled {
+    background-color: #efefef;
+    color: #cccccc;
+    cursor: inherit;
+    font-size: 12px;
+    margin: 2px;
+    padding: 2px 5px;
+}
+.portlet, .portlet-borderless-container {
+    box-shadow: 0 1px 5px #333;
+    margin: 0 4px 8px;
+    min-height: 100px;
+    overflow: hidden;
+    padding: 0;
+}
+.portlet {
+    border-radius: 5px;
+}
+.portlet-borderless-bar {
+    background-color: #eeeeee;
+    color: #525252;
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.portlet-borderless-bar a {
+    color: #525252;
+}
+.portlet-borderless-bar span {
+    float: right;
+    margin: 0 5px;
+}
+.portlet-topper {
+    background: rgba(0, 0, 0, 0) linear-gradient(#ddd4c4, #fff) repeat scroll 0 0;
+    border-radius: 5px;
+    border-top: 1px solid white;
+}
+.portlet-title {
+    font-size: 15px;
+    font-weight: 400;
+}
+.portlet-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.drop-area {
+    background-color: #d3dadd;
+}
+.lfr-column, .lfr-portlet-column {
+    height: 100%;
+    min-height: 150px;
+}
+.lfr-component, .lfr-menu-list {
+    z-index: 9999;
+}
+.lfr-component .lfr-menu-list {
+    display: none;
+}
+.lfr-actions .lfr-trigger ul {
+    display: none;
+}
+.ui-widget-content {
+    border: 2px solid #690003;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    background-color: transparent;
+    background-image: none;
+    border: medium none;
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+    background-image: url("images/ui-icons_004b8b_256x240.png");
+}
+.ui-datepicker-calendar a {
+    background-color: white !important;
+    background-image: none;
+    border: medium none !important;
+    font-weight: bold;
+}
+.ui-datepicker .ui-datepicker-other-month {
+    background-color: white;
+    background-image: url("");
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    text-align: center;
+}
+.ui-datepicker-calendar .ui-datepicker-week-end a {
+    color: #1e7145;
+}
+.ui-widget-content .ui-state-highlight {
+    border: 2px solid #690003 !important;
+}
+.ui-widget-content .ui-state-highlight .ui-state-hover {
+    color: inherit;
+}
+.ui-widget-content .ui-datepicker-week-end .ui-state-hover {
+    color: white;
+}
+.ui-datepicker-header .ui-state-hover, .ui-datepicker-header .ui-state-focus {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #ffffff;
+}
+.ui-button .ui-state-default {
+    background: #690003 url("images/ui-bg_flat_75_004b8b_40x100.png") repeat scroll 0 0;
+}
+.ui-tabs {
+    border: medium none !important;
+}
+.ui-tabs .ui-tabs-nav {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #e4e7ee;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    padding-left: 0;
+}
+.ui-tabs .ui-tabs-nav .ui-state-default {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none;
+    margin-bottom: -2px !important;
+}
+.ui-tabs .ui-tabs-nav .ui-state-default .ui-tabs-anchor {
+    color: #525252;
+    font-weight: 400;
+}
+.ui-tabs .ui-tabs-nav .ui-state-active {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border-color: -moz-use-text-color -moz-use-text-color #690003;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    margin-bottom: -2px !important;
+}
+.ui-tabs .ui-tabs-nav .ui-state-active .ui-tabs-anchor {
+    color: #690003;
+    font-weight: 400;
+}
+.ui-tabs .ui-tabs-panel {
+    border: medium none;
+}
+.ps-container .ps-scrollbar-x, .ps-container .ps-scrollbar-y {
+    border-radius: 0;
+}
+.metrouicss .bg-color-default-dark, .bg-color-default-dark {
+    background-color: #7b1524;
+}
+.metrouicss .bg-color-default, .bg-color-default {
+    background-color: #690003;
+}
+.border-color-default {
+    border-color: #690003;
+}
+.fg-color-default {
+    color: #690003;
+}
+.bg-color-gray {
+    background-color: #f0f1f4;
+}
+.fg-color-darkgray {
+    color: #525252;
+}
+.bg-color-darkgray {
+    background-color: #525252;
+}
+.carousel-panel {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.carousel-content {
+    height: 350px;
+}
+.carousels {
+    float: left;
+    height: 350px;
+    opacity: 0.2;
+    overflow: hidden;
+    width: 978px;
+}
+.current-cals {
+    opacity: 1;
+}
+.carousel-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    height: 350px;
+    width: 522px;
+}
+.carousel-title {
+    background-image: url("/html/themes/classic/images/vignette.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    float: left;
+    height: 350px;
+    padding: 0 40px;
+    width: 376px;
+}
+.carousel-title span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    height: 50px;
+    margin-top: 100px;
+    overflow: hidden;
+    width: 370px;
+}
+.carousel-detail span {
+    font-size: 14px;
+    font-weight: normal;
+    height: auto;
+    margin-top: 0;
+    overflow: auto;
+    width: auto;
+}
+.carousel-detail {
+    color: white;
+    font-size: 13px;
+    height: 130px;
+    line-height: 20px;
+    margin: 20px 20px 0 0;
+    overflow: hidden;
+    text-indent: 20px;
+    width: 370px;
+}
+.carousel-label {
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 100%;
+    z-index: 6;
+}
+.carousel-label .icon-stop {
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    font-size: 50%;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+}

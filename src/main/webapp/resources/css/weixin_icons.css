@@ -1,0 +1,126 @@
+.status_onlineCls {
+    background-image:url(../images/icons/weixin/status_online.png) !important;
+}
+.user_redCls {
+    background-image:url(../images/icons/weixin/user_red.png) !important;
+}
+.forbiddenZH {
+    ime-mode:disabled;
+}
+.cancel {
+    background-image:url(../images/icons/weixin/cancel.png) !important;
+}
+.folder_go {
+	background-image:url(../images/icons/weixin/folder_go.png) !important;
+}
+.label_style {
+	font-size:13px;color:green; font-weight:bold;
+}
+
+.detail {
+	background-image:url(../images/icons/weixin/detail.png) !important;
+}
+.ok {
+	background-image:url(../images/icons/weixin/ok.png) !important;
+}
+.denied {
+	background-image:url(../images/icons/weixin/denied.png) !important;
+}
+.chart_bar {
+	background-image:url(../images/icons/weixin/chart_bar.png) !important;
+}
+.wrench_orange {
+	background-image:url(../images/icons/weixin/wrench_orange.png) !important;
+}
+.bomb {
+	background-image:url(../images/icons/weixin/bomb.png) !important;
+}
+.user_green {
+	background-image:url(../images/icons/weixin/user_green.png) !important;
+}
+.user {
+	background-image:url(../images/icons/weixin/user.png) !important;
+}
+.bell {
+	background-image:url(../images/icons/weixin/bell.png) !important;
+}
+.newspaper {
+	background-image:url(../images/icons/weixin/newspaper.png) !important;
+}
+.user_comment {
+	background-image:url(../images/icons/weixin/user_comment.png) !important;
+}
+.bricks {
+	background-image:url(../images/icons/weixin/bricks.png) !important;
+}
+.book {
+	background-image:url(../images/icons/weixin/book.png) !important;
+}
+.tux {
+	background-image:url(../images/icons/weixin/tux.png) !important;
+}
+.thumb_up {
+	background-image:url(../images/icons/weixin/thumb_up.png) !important;
+}
+
+.daihou {
+	background-image:url(../images/icons/weixin/daihou.png) !important;
+}
+
+.image {
+	background-image:url(../images/icons/weixin/image.png) !important;
+}
+
+.template {
+	background-image:url(../images/icons/weixin/template.png) !important;
+}
+
+.images {
+	background-image:url(../images/icons/weixin/images.png) !important;
+}
+
+.pencil {
+	background-image:url(../images/icons/weixin/pencil.png) !important;
+}
+
+.sound {
+	background-image:url(../images/icons/weixin/sound.png) !important;
+}
+
+.television {
+	background-image:url(../images/icons/weixin/television.png) !important;
+}
+
+.download {
+	background-image:url(../images/icons/weixin/download.gif) !important;
+}
+
+div .atta-file{
+	float:left;
+	padding:0 0 2px;
+	height:16px;
+	margin-right:6px;
+	border:solid 1px blue;
+}
+
+div .atta-file-lbl{
+	float:left;
+	height:16px;
+	margin-left:4px;
+	margin-right:4px;
+	cursor:hand;
+}
+
+div .atta-file-del{
+	float:left;
+	margin-left:4px;
+	padding:0px;
+	width:8px;
+	height:8px;
+	background:url(../images/icons/weixin/del.gif) no-repeat;
+	cursor:hand;
+}
+
+.icon-tip{
+		background:url('../images/icons/weixin/tip.png') no-repeat;
+	}

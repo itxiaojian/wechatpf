@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+			 xmlns:beans="http://www.springframework.org/schema/beans"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+	<http use-expressions="true" auto-config="false">
+		<intercept-url pattern="/jsp/**" filters="none"/>
+		<intercept-url pattern="/libs/**" filters="none"/>
+		<intercept-url pattern="/resources/**" filters="none"/>
+		<intercept-url pattern="/resources/src/Plugins/**" filters="none"/>
+		<intercept-url pattern="/resources/src/**" filters="none"/>
+		<intercept-url pattern="/system/layout/skin/**" filters="none"/>
+		<intercept-url pattern="/system/login/**" filters="none"/>
+		<intercept-url pattern="/demo/Word/wordUpload/**" filters="none"/>
+		<intercept-url pattern="/demo/Knowledge/knowledgeUpload/**" filters="none"/>
+		<intercept-url pattern="/sys/SysWxyh/save" filters="none" />
+		<intercept-url pattern="/wzy/ZyXyxw/zhuye" filters="none" />  <!-- 微主页 -->
+<!-- 验证码 -->         <intercept-url pattern="/sys/SysCode/code" filters="none" />   
+
+<!-- 图文信息 -->         <intercept-url pattern="/weixin/twxx/twxxDetail" filters="none" />  
+<!-- 图文内容 -->         <intercept-url pattern="/weixin/twxx/twxxnr " filters="none" /> 
+
+<!-- 新闻列表 -->         <intercept-url pattern="/wzy/ZyXyxw/zyXwlbDetail" filters="none" />   
+<!-- 新闻详情 -->		   <intercept-url pattern="/wzy/ZyXyxw/zyXyxwDetail" filters="none" />         
+<!-- 一键救援 -->		   <intercept-url pattern="/wzy/ZyYjjy/zyYjjyDetail" filters="none" />             
+<!-- 电话黄历 -->		   <intercept-url pattern="/wzy/ZyDhhl/zyDhhlDetail" filters="none" />            
+<!-- 学院简介 -->		   <intercept-url pattern="/wzy/ZyXyxgxx/zyXyjjDetail" filters="none" />    
+<!-- 学院相关信息 -->       <intercept-url pattern="/wzy/ZyXyxgxx/zyXyxgxxDetail" filters="none" />
+<!-- 学院风光 -->		   <intercept-url pattern="/wzy/ZyXyxgxx/zyXyfgDetail" filters="none" />       
+<!-- 办事流程列表 -->	   <intercept-url pattern="/wzy/ZyXyxgxx/zyBslclbDetail" filters="none" />     
+<!-- 规章制度列表 -->	   <intercept-url pattern="/wzy/ZyXyxgxx/zyGzzdlbDetail" filters="none" />   
+<!-- 组织架构列表 -->	   <intercept-url pattern="/wzy/ZyXyxgxx/zyZzjglbDetail" filters="none" /> 
+<!-- 学院校历 -->		   <intercept-url pattern="/wzy/ZyXyxgxx/zyXlDetail" filters="none" />     
+<!-- 宿管动态 -->	       <intercept-url pattern="/wzy/ZyXyxgxx/zySgdtDetail" filters="none" />  
+<!-- 服务帮助 -->		   <intercept-url pattern="/wzy/ZyXyxgxx/zyFwbzDetail" filters="none" />  
+<!-- 关于我们 -->          <intercept-url pattern="/wzy/ZyXyxgxx/zyGywm" filters="none" /> 
+<!-- 解除绑定 -->          <intercept-url pattern="/wfw/zy/jcbd" filters="none" /> 
+<!-- 录取查询 -->		   <intercept-url pattern="/wzy/ZyLqxx/zyLqxxDeatail" filters="none" />  
+
+<!-- 微主页流程信息 -->      <intercept-url pattern="/wzy/ZyLcxx/toSqjjPage" filters="none" />  
+<!-- 微主页请假流程信息-->    <intercept-url pattern="/wzy/ZyLcxx/toJsxxPage" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/toQjjl" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/toSqxx" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/toSqxxXq" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/toCcjl" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/ccsq" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/ccsqUpdate" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/toSqxxUpdate" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/zyLcxxBd" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/zyLcxxBd" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/saveQjxx" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/saveCcxx" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/shtg" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/bh" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/updateCcxx" filters="none" /> 
+<!-- 微主页请假流程信息 -->    <intercept-url pattern="/wzy/ZyLcxx/updateQjxx" filters="none" /> 
+
+<!-- 考试成绩 -->		   <intercept-url pattern="/wfw/ZsXscj/**" filters="none" />
+<!-- 教师监考信息 -->	   <intercept-url pattern="/wfw/ZsJsjkxx/**" filters="none" />
+<!-- 教学成果-->		   <intercept-url pattern="/wfw/ZsJxcg/**" filters="none" />
+<!-- 科研项目信息 -->	   <intercept-url pattern="/wfw/ZsKyxm/**" filters="none" />
+<!-- 平困生信息 -->		   <intercept-url pattern="/wfw/ZsPksxx/**" filters="none" />
+<!-- 培养方案 -->		   <intercept-url pattern="/wfw/ZsPyfa/**" filters="none" />
+<!-- 图书借阅信息 -->	   <intercept-url pattern="/wfw/ZsTsjyxx/**" filters="none" />
+<!-- 学籍异动 -->		   <intercept-url pattern="/wfw/ZsXjyd/**" filters="none" />
+<!-- 学生贷款信息 -->	   <intercept-url pattern="/wfw/ZsXsdkxx/**" filters="none" />  
+<!-- 评教信息 -->	       <intercept-url pattern="/wfw/ZsPjxx/**" filters="none" />  
+<!--rss的测试页面-->       <intercept-url pattern="/rss/rssList/**" filters="none"/>  	
+<!--rss的测试页面-->       <intercept-url pattern="/rss/rssTest/**" filters="none"/>  	
+<!--rss的测试页面--> 	   <intercept-url pattern="/rss/**" filters="none"/>  
+<!--学生统计-->           <intercept-url pattern="/stat/**" filters="none"/>  
+<!-- 学生奖惩 -->		   <intercept-url pattern="/wfw/ZsXsjc/**" filters="none" /> 
+<!-- 学生缴欠费信息 -->	   <intercept-url pattern="/wfw/ZsXsjqfxx/**" filters="none" /> 
+<!-- 课表 -->		   	   <intercept-url pattern="/wfw/ZsKb/**" filters="none" /> 
+<!-- 学生考试安排 -->	   <intercept-url pattern="/wfw/ZsXsksapxx/**" filters="none" /> 
+<!-- 学生实习情况 -->	   <intercept-url pattern="/wfw/ZsXssxqk/**" filters="none" /> 
+<!-- 网络选修课信息 -->	   <intercept-url pattern="/wfw/ZsXxkxx/**" filters="none" />
+<!-- 一卡通信息 -->		   <intercept-url pattern="/wfw/ZsYktxx/**" filters="none" />
+<!-- 图书借阅信息 -->	   <intercept-url pattern="/wfw/ZsZggz/**" filters="none" />
+<!-- 微信绑定 -->	   <intercept-url pattern="/sys/SysWxyh/**" filters="none" />
+<!-- 我要吐槽 -->	   <intercept-url pattern="/wzy/ZyWdtc/**" filters="none" />
+<!-- 教室查询 -->		<intercept-url pattern="/wfw/ZsJscx/**" filters="none"/>
+<!-- 宿舍查询 -->		<intercept-url pattern="/wfw/ZsSscx/**" filters="none"/>
+<!-- 學生考勤-->		<intercept-url pattern="/wfw/ZsXskq/**" filters="none"/>
+<!-- 图书分类 -->		<intercept-url pattern="/wfw/ZsTsfl/**" filters="none"/>
+<!-- 挂科信息 -->		<intercept-url pattern="/wfw/ZsXsgkxx/**" filters="none" />
+<!-- 学生入住信息 -->	<intercept-url pattern="/wfw/ZsXsrzxx/**" filters="none" />
+<!-- 贫困生预警 -->	    <intercept-url pattern="/wfw/ZsPksxx/**" filters="none" />
+<!-- 学生入住信息 -->	<intercept-url pattern="/wfw/ZsXsTkxx/**" filters="none" />
+<!-- 网络计费 -->		<intercept-url pattern="/wfw/ZsWljf/**" filters="none"/>
+<!-- 迎新公告-->		<intercept-url pattern="/wyx/WyxYxgg/**" filters="none"/>
+<!-- 迎新流程-->		<intercept-url pattern="/wyx/ZsYxlc/**" filters="none"/>
+
+
+<intercept-url pattern="/wfw/zy/zhuye" filters="none"/>
+<!-- 二手市场 -->		<intercept-url pattern="/wsh/ShEssc/**" filters="none"/>
+<!-- 失物招领 -->		<intercept-url pattern="/wsh/ShSwzl/**" filters="none"/>
+<!-- 微报名 -->		<intercept-url pattern="/wsh/ShWbm/**" filters="none"/>
+<!-- 微点名 -->		<intercept-url pattern="/wsh/ZsSkkqb/**" filters="none"/>
+<!-- 微点名 -->		<intercept-url pattern="/wsh/ZsSkkqjlb/**" filters="none"/>
+<!-- 微上墙 -->		<intercept-url pattern="/wsh/ShWsq/toWsqYhqd" filters="none"/>
+<!-- 微上墙 -->		<intercept-url pattern="/wsh/ShWsq/toWsqYhfb" filters="none"/> 
+<!-- 微上墙 -->		<intercept-url pattern="/wsh/ShWsq/saveCyr" filters="none"/> 
+<!-- 微上墙 -->		<intercept-url pattern="/wsh/ShWsq/toSend" filters="none"/> 
+<!-- 微上墙 -->		<intercept-url pattern="/wsh/ShWsq/toDemo" filters="none"/> 
+<!-- 微信抽奖 -->		<intercept-url pattern="/wsh/ShWxcjjg/**" filters="none"/>
+<!-- 图片上传 -->		<intercept-url pattern="/wsh/upload/**" filters="none"/>
+<!-- 调查问卷 -->		<intercept-url pattern="/wsh/WjObject/**" filters="none"/>
+<!-- 调查问卷 -->		<intercept-url pattern="/wsh/WjQuestion/**" filters="none"/>
+<!-- 调查问卷-->		<intercept-url pattern="/wsh/WjReplay/**" filters="none"/>
+<!-- 微生活主页 -->		<intercept-url pattern="/wsh/zy/**" filters="none"/>
+<!-- 微海报		<intercept-url pattern="/wsh/ShWhb/**" filters="none"/> -->
+<!-- 微海报-->			<intercept-url pattern="/wsh/ShWhb/toSjYm" filters="none"/> 
+<!-- 校车时刻 -->		<intercept-url pattern="/wsh/ShXcsk/**" filters="none"/>
+<!-- 校友信息 -->		<intercept-url pattern="/wsh/ShXyxx/**" filters="none"/>
+<!-- 校友信息 -->		<intercept-url pattern="/wsh/ShXyxx/**" filters="none"/>
+<!-- 设备报修申请 -->	<intercept-url pattern="/wx/Bxsq/**" filters="none"/>
+<!-- 设备报修查看-->  	<intercept-url pattern="/bx/bxck/cklist" filters="none"/>
+<!-- 设备报修查看详情-->  	<intercept-url pattern="/bx/bxck/ckdetail" filters="none"/>
+<!-- 设备报修批量的结束-->  	<intercept-url pattern="/bx/bxgl/pljs" filters="none"/>
+<!-- 投票专栏 -->      <intercept-url pattern="/wsh/ShTpzl/shtpzlPage" filters="none"/>
+<!-- 投票选项 -->      <intercept-url pattern="/wsh/ShTpzl//shtpzlDetail" filters="none"/>
+<!-- 投票结果 -->      <intercept-url pattern="/wsh/ShTpzl/tpjgDetail" filters="none"/>
+<!-- 保存投票记录 -->      <intercept-url pattern="/wsh/ShTpzl/saveTp" filters="none"/>
+<!-- 专题讨论 -->      <intercept-url pattern="/wsh/ShZttl/shZttlPage" filters="none"/>
+<!-- 专题讨论评论 -->   <intercept-url pattern="/wsh/ShZttl/shZttlpageDetail" filters="none"/>
+<!-- 专题讨论评论-->	<intercept-url pattern="/wsh/ShZttl/doPlreply" filters="none"/>
+<!-- 专题讨论删除-->	<intercept-url pattern="/wsh/ShZttl/deleteWdtcList" filters="none"/>
+<!-- 历史会议 -->      <intercept-url pattern="/wxutil/meeting/lshyList" filters="none"/>
+<!-- 历史会议详情 -->   <intercept-url pattern="/wxutil/meeting/lshyDetail" filters="none"/>
+<!--学生查询-->		<intercept-url pattern="/wfw/ZsXscx/**" filters="none"/>
+<!-- 设备报修查看-->  	<intercept-url pattern="/bx/bxck/cklist" filters="none"/>
+<!-- 设备报修查看详情-->  <intercept-url pattern="/bx/bxck/ckdetail" filters="none"/>
+<!-- 维修工报修的页面-->  <intercept-url pattern="/bx/bxsl/toWxgPage/**" filters="none"/>
+<!-- 报修耗材-->  	    <intercept-url pattern="/bx/bxsl/getHc/**" filters="none"/>
+<!-- 维修工确认-->  	<intercept-url pattern="/bx/bxsl/wxgQr/**" filters="none"/>
+<!-- 维修工任务-->  	<intercept-url pattern="/bx/bxrw/**" filters="none"/>
+<!-- 微服务的报修的查看-->  	    <intercept-url pattern="/bx/bxck/tobxdetail/**" filters="none"/>
+
+<!-- 校长信箱列表 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxList" filters="none"/>
+<!-- 校长信箱添加 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxAdd" filters="none"/>
+<!-- 新校长信箱添加 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxAddNew" filters="none"/>
+<!-- 校长信箱信息保存 -->		<intercept-url pattern="/xzxx/XxXjxxb/saveXj" filters="none"/>
+<!-- 校长信箱修改 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxUpdate" filters="none"/>
+<!-- 新校长信箱修改 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxUpdateNew" filters="none"/>
+<!-- 校长信箱信息修改 -->		<intercept-url pattern="/xzxx/XxXjxxb/updateXj" filters="none"/>
+<!-- 校长信箱信息详情 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxDetail" filters="none"/>
+<!-- 校长信箱门户查看详情 -->	<intercept-url pattern="/xzxx/XxXjxxb/getXjmhckDetail" filters="none"/>
+<!-- 校长信箱门户查看 -->		<intercept-url pattern="/xzxx/XxXjxxb/getXjmhckList" filters="none"/>
+<!-- 校长信箱信息删除 -->		<intercept-url pattern="/xzxx/XxXjxxb/deleteXj" filters="none"/>
+<!-- 校长信箱信息反馈 -->		<intercept-url pattern="/xzxx/XxXjxxb/toXzxxFk" filters="none"/>
+<!-- 校长信箱信件评价信息保存 -->		<intercept-url pattern="/xzxx/XxXjxxb/savePj" filters="none"/>
+<!-- 校长信箱信件评价信息保存 -->		<intercept-url pattern="/xzxx/XxXjxxb/getPj" filters="none"/>
+
+<!--派单打印-->  <intercept-url pattern="/bx/bxsl/openPdPage" filters="none"/>
+
+<!-- 图书还书提醒列表 -->		<intercept-url pattern="/wtx/TxTshstx/totxTshstxList/**" filters="none"/>
+<!-- 图书还书提醒详情 -->		<intercept-url pattern="/wtx/TxTshstx/totxTshstxDetail/**" filters="none"/>
+<!-- 学生上课提醒列表 -->		<intercept-url pattern="/wtx/TxXssktx/totxXssktxList/**" filters="none"/>
+<!-- 学生上课提醒详情 -->		<intercept-url pattern="/wtx/TxXssktx/totxXssktxDetail/**" filters="none"/>
+<!-- 一卡通消费记录提醒列表 -->		<intercept-url pattern="/wtx/TxYktxfjltx/totxYktxfjltxList/**" filters="none"/>
+<!-- 一卡通消费记录提醒详情 -->		<intercept-url pattern="/wtx/TxYktxfjltx/totxYktxfjltxDetail/**" filters="none"/>
+<!-- 一卡通大额消费提醒列表 -->		<intercept-url pattern="/wtx/TxYktdexftx/totxYktdexftxList/**" filters="none"/>
+<!-- 一卡通大额消费提醒详情 -->		<intercept-url pattern="/wtx/TxYktdexftx/totxYktdexftxDetail/**" filters="none"/>
+<!-- 老师上课提醒列表 -->		<intercept-url pattern="/wtx/TxLssktx/totxLssktxList/**" filters="none"/>
+<!-- 老师上课提醒详情 -->		<intercept-url pattern="/wtx/TxLssktx/totxLssktxDetail/**" filters="none"/>
+<!-- 提醒的页面 -->		        <intercept-url pattern="/wtx/TxTxxxlsjl/getTxlsjl/**" filters="none"/>
+<!-- 提醒的页面加载 -->		        <intercept-url pattern="/wtx/TxTxxxlsjl/getTxlsjlZj/**" filters="none"/>
+<!-- 提醒开关 -->		<intercept-url pattern="/wtx/Txkg/**" filters="none"/>
+
+<!-- 提醒记录 -->		<intercept-url pattern="/wtx/TxTxxxlsjl/getTxlsjlZj/**" filters="none"/>
+<!-- 提醒记录 -->		<intercept-url pattern="/wtx/TxTxxxlsjl/getTxlsjl/**" filters="none"/>
+<!-- 更新提醒-->		<intercept-url pattern="/wtx/TxTxxxlsjl/updateTxkg/**" filters="none"/>
+
+<!-- 周边摇一摇 -->		<intercept-url pattern="/wxauth/shake/**" filters="none"/>
+     
+<!--操作手册pdf下载 -->	<intercept-url pattern="/system/1.pdf" filters="none"/>  
+<!--分布图下载 -->	<intercept-url pattern="/system/fbt.png" filters="none"/>
+ 
+<!-- 建设中页面 -->		<intercept-url pattern="/wfw/zy/jsym" filters="none"/>
+ 
+<!-- 公司微信平台 --><intercept-url pattern="/com/company/**" filters="none"/>
+<!-- 附件上传 --><intercept-url pattern="/util/file/**" filters="none"/>
+ 
+ <!-- 离校新闻 --><intercept-url pattern="/wlx/lxxgxx/**" filters="none"/>
+ <!-- 离校新闻 --><intercept-url pattern="/wlx/ZsLxlc/**" filters="none"/>
+ <!-- 离校提醒 --><intercept-url pattern="/wlx/ZsLxTx/**" filters="none"/>
+ <!-- 测试 --><intercept-url pattern="/wfw/ZsText/**" filters="none"/>
+  <!-- 奖助贷--><intercept-url pattern="/wfw/ZsXsjzdxx/**" filters="none"/>
+ <!-- 讲座报告-->		<intercept-url pattern="/wsh/ShJzbg/shJzbgPage" filters="none"/>
+<!-- 讲座报告详情-->	<intercept-url pattern="/wsh/ShJzbg/shJzbgpageDetail/**" filters="none"/>
+<!-- 讲座报告评论-->	<intercept-url pattern="/wsh/ShJzbg/doPlreply" filters="none"/>
+<!-- 讲座报告删除-->	<intercept-url pattern="/wsh/ShJzbg/deletePj" filters="none"/>
+<!-- 待办事项--><intercept-url pattern="/wtx/oadbsx/**" filters="none"/>
+<!--周次星期--><intercept-url pattern="/wfw/dzxq/**" filters="none"/>
+<!-- 招生考试-->		<intercept-url pattern="/wzy/ZyXyxw/zyZsksList" filters="none"/>
+<!-- 招生考试-->		<intercept-url pattern="/wzy/ZyXyxw/zyZsksDetail" filters="none"/>
+<!-- 照片墙 -->        <intercept-url pattern="/wsh/ShZpq/**" filters="none"/>
+<!-- 通讯录 -->        <intercept-url pattern="/wfw/ZsTxl/zsTxlDetail" filters="none"/>
+
+		<intercept-url pattern="/**" access="isAuthenticated()"/>
+		<intercept-url pattern="/system/layout/**" access="isAuthenticated()"/>
+		<form-login login-page="/system/login/login.jsp" default-target-url='/system/layout/main.jsp'/>
+		<http-basic/>
+		<remember-me/>
+		<custom-filter before="FORM_LOGIN_FILTER " ref="myUsernamePasswordAuthenticationFilter"/>
+		<custom-filter before="FILTER_SECURITY_INTERCEPTOR" ref="defaultFilter"/>
+		<custom-filter position="LOGOUT_FILTER" ref="logoutFilter"/>
+		<!--<custom-filter ref="concurrencyFilter" position="CONCURRENT_SESSION_FILTER"/> 
+		<session-management invalid-session-url="/jsp/expired.jsp" session-authentication-strategy-ref="concurrentSessionControlStrategy"/>-->
+	</http>
+
+	<beans:bean id="defaultFilter" class="com.sliu.framework.app.sys.security.DefaultFilterSecurityInterceptor">
+		<beans:property name="authenticationManager" ref="authenticationManager"/>
+		<beans:property name="accessDecisionManager" ref="accessDecisionManager"/>
+		<beans:property name="securityMetadataSource" ref="defaultSecurityMetadataSource"/>
+	</beans:bean>
+
+	<beans:bean id="logoutFilter" class="org.springframework.security.web.authentication.logout.LogoutFilter">
+		<beans:constructor-arg index="0" value="/system/login/login.jsp"/>
+		<beans:constructor-arg index="1">
+			<beans:list>
+				<beans:bean id="myLogoutHandler" class="com.sliu.framework.app.sys.security.MyLogoutHandler"/>
+				<beans:bean id="securityContextLogoutHandler" class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler"/>
+			</beans:list>
+		</beans:constructor-arg>
+	</beans:bean>
+
+	<beans:bean id="myUsernamePasswordAuthenticationFilter" class="com.sliu.framework.app.sys.security.MyUsernamePasswordAuthenticationFilter">
+		<beans:property name="validateCode" value="false"/>
+		<beans:property name="authenticationManager" ref="authenticationManager"/>
+		<beans:property name="sessionAuthenticationStrategy" ref="concurrentSessionControlStrategy"/>
+		<beans:property name="authenticationSuccessHandler" ref="myAuthenticationSuccessHandler"/>
+		<beans:property name="authenticationFailureHandler" ref="simpleUrlAuthenticationFailureHandler"/>
+	</beans:bean>
+
+	<beans:bean id="accessDecisionManager" class="com.sliu.framework.app.sys.security.MyAccessDecisionManager"/>
+
+	<beans:bean id="simpleUrlAuthenticationFailureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+		<beans:property name="defaultFailureUrl" value="/system/login/login.jsp"></beans:property>
+	</beans:bean>
+	
+	<beans:bean id="myAuthenticationSuccessHandler" class="com.sliu.framework.app.sys.security.MyAuthenticationSuccessHandler">
+		<beans:property name="alwaysUseDefaultTargetUrl" value="true"/>
+		<beans:property name="targetUrlMap">
+			<beans:map>
+				<beans:entry key="USER_LOGIN" value="/site/user/index"/>
+			</beans:map>
+		</beans:property>
+		<beans:property name="defaultTargetUrl" value="/system/layout/main.jsp"/>
+	</beans:bean>
+
+	<!-- 认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="userDetailService">
+			<!-- 如果用户的密码采用加密的话，可以加点“盐” -->
+			<password-encoder hash="md5">
+				<!-- 盐，根据用户name作为盐 -->
+<!-- 				<salt-source user-property="username"/> -->
+			</password-encoder>
+		</authentication-provider>
+	</authentication-manager>
+
+
+	<beans:bean id="userDetailService" class="com.sliu.framework.app.sys.security.UserDetailServiceImpl"/>
+
+	<!-- 资源源数据定义，即定义某一资源可以被哪些角色访问 -->
+	<beans:bean id="defaultSecurityMetadataSource" class="com.sliu.framework.app.sys.security.DefaultInvocationSecurityMetadataSource" lazy-init="false"/>
+	
+	<!-- ConcurrentSessionFilter过滤器配置(主要设置账户session过期路径) 
+	User类必须重写equals和hashCode方法
+	-->  
+	<beans:bean id="concurrencyFilter" class="org.springframework.security.web.session.ConcurrentSessionFilter">  
+	    <beans:property name="expiredUrl" value="/jsp/loginlimit.jsp"></beans:property>  
+	    <beans:property name="sessionRegistry" ref="sessionRegistry"></beans:property>  
+	</beans:bean> 
+	
+	<beans:bean id="concurrentSessionControlStrategy" class="org.springframework.security.web.authentication.session.ConcurrentSessionControlStrategy">
+		<beans:constructor-arg name="sessionRegistry" ref="sessionRegistry" />
+		<beans:property name="maximumSessions" value="1" />
+		<!-- 
+		1、设置exceptionIfMaximumExceeded=true，会报异常：SessionAuthenticationException("Maximum sessions of {0} for this principal exceeded");
+  		2、设置exceptionIfMaximumExceeded=false，那么B用户会把A用户挤掉，A用户再点击页面，则会跳转到
+		ConcurrentSessionFilter的expiredUrl路径。 -->
+		<beans:property name="exceptionIfMaximumExceeded" value="false" />
+	</beans:bean>
+	<beans:bean name="sessionRegistry" class="org.springframework.security.core.session.SessionRegistryImpl"/>
+</beans:beans>

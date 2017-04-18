@@ -1,0 +1,1342 @@
+
+.wjContent {
+    background: #fff none repeat scroll 0 0;
+    min-height: 300px;
+    min-width: 990px;
+    width: auto;
+    z-index: 888;
+}
+body, input, button, select, textarea, th, td {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.4;
+}
+body, input, textarea, select {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+}
+.content {
+    border: medium none !important;
+    color: #828282;
+    margin: 0 auto;
+    min-height: 440px;
+    padding: 0 !important;
+}
+ul li {
+    display: inline;
+    font-size: 14px;
+    list-style: outside none none;
+}
+.fR {
+    float: right;
+}
+.fL {
+    float: left;
+}
+.mtop {
+    margin-top: 15px;
+}
+.mleft {
+    margin-left: 10px;
+}
+.smallfontsize {
+    font-size: 16px;
+    font-weight: normal;
+}
+.smallerfontsize {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0.2em 0.3em !important;
+}
+.clear {
+    clear: both;
+}
+.spanlh {
+    line-height: 32px;
+}
+.wjhead {
+    width: auto;
+}
+.wjtitle {
+    background: #fff none repeat scroll 0 0;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+}
+.wjtitle div:first-child {
+    padding-left: 22px;
+}
+.wjname {
+    color: #4c4c4c;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.actions {
+    position: absolute;
+    right: 22px;
+    top: 10px;
+}
+.actions li {
+    display: inline;
+    font-size: 16px;
+    list-style: outside none none;
+    margin-left: 15px;
+}
+a {
+    color: #828282;
+    display: inline;
+    outline: medium none;
+    text-decoration: none;
+}
+.active {
+    color: #4c4c4c;
+}
+.nav2-tabs {
+    font-size: 16px;
+    margin-right: 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.nav2-tabs li {
+    float: left;
+    font-size: 16px;
+    height: 45px;
+    line-height: 44px;
+    margin-right: 27px;
+}
+.nav2-tabs > li > a {
+}
+.nav2 > li > a {
+    color: #828282;
+    display: block;
+    text-decoration: none;
+}
+.nav2-tabs .active {
+    background: rgba(0, 0, 0, 0) url("/static/images/arrow.gif") no-repeat scroll center bottom;
+}
+.nav2-tabs .active a {
+    font-weight: bold;
+}
+.nav2-tabs::before, .nav2-tabs::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.nav2-tabs::after {
+    clear: both;
+}
+.liactive {
+    position: relative;
+}
+.arrowT {
+    border-bottom: medium none !important;
+    font-size: 30px !important;
+    position: absolute;
+    width: 30px;
+    z-index: 1000;
+}
+.arrowt, .arrowb {
+    color: inherit;
+    font: 0px/9999px serif;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+}
+.arrowT {
+    left: 24px;
+    top: 24px;
+}
+.arrowT .arrowt {
+    border-color: transparent transparent #fff;
+    border-style: dashed dashed solid;
+    border-width: 0 9px 9px;
+    top: 1px;
+    z-index: 3;
+}
+.arrowT .arrowb {
+    border-color: transparent transparent #dbdbdb;
+    border-style: dashed dashed solid;
+    border-width: 0 9px 9px;
+}
+.wjactions {
+    padding: 7px 22px;
+}
+.wjactions ul {
+    text-align: right;
+}
+.wjactions ul li a {
+    margin-left: 20px;
+}
+[class^="-icon"] i, [class*="-icon"] i {
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 0.1em;
+    vertical-align: middle;
+}
+.wjactions li a i {
+    background-image: url("/static/images/wjsj_toolico_off.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 0.3em;
+    vertical-align: middle;
+}
+.baiscc i {
+    background-position: -7px -85px;
+    height: 32px;
+    width: 27px;
+}
+.crossc i {
+    background-position: -47px -85px;
+    height: 32px;
+    width: 30px;
+}
+.detailsc i {
+    background-position: -84px -84px;
+    height: 32px;
+    width: 31px;
+}
+.Statistics i {
+    background-position: -164px -4px;
+    height: 32px;
+    width: 31px;
+}
+.wjactions .active i {
+}
+.paidcollect i {
+    background-position: -124px -123px;
+    height: 32px;
+    width: 31px;
+}
+.animatet {
+    bottom: 2px;
+    left: 459px;
+    position: absolute;
+}
+.animated {
+    cursor: pointer;
+    display: none;
+}
+.smallpadding {
+    background: #fdf9cd none repeat scroll 0 0;
+    border-bottom: 1px solid #dbdbdb;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    height: 5px;
+    margin: 0 auto;
+    padding: 3px 0;
+    width: 22px;
+}
+.animatet i {
+    background: rgba(0, 0, 0, 0) url("/static/images/arrow_list_ico.png") no-repeat scroll -6px -18px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 10px;
+}
+.animated i {
+    background: rgba(0, 0, 0, 0) url("/static/images/arrow_list_ico.png") no-repeat scroll 1px -10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    width: 22px;
+}
+.contract .animatet i {
+    background: rgba(0, 0, 0, 0) url("/static/images/arrow_list_ico2.png") no-repeat scroll -6px -18px !important;
+}
+.contract .animated i {
+    background: rgba(0, 0, 0, 0) url("/static/images/arrow_list_ico2.png") no-repeat scroll 1px -10px !important;
+}
+.wjbbody {
+    color: #4c4c4c;
+}
+.contract {
+    height: 46px;
+}
+.contractbox {
+    background: #fdf9cd none repeat scroll 0 0;
+    border-bottom: 1px solid #dbdbdb;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    margin: 0 auto;
+    padding: 13px 20px;
+    position: relative;
+    width: 887px;
+}
+.contractbox label {
+    color: #dbdbdb;
+}
+.acttime {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+}
+.caption {
+    margin: 20px auto 0;
+    padding: 20px;
+    width: 887px;
+}
+.caption p, .paidtext p {
+    line-height: 30px;
+}
+.copylink {
+    background: #efefef none repeat scroll 0 0;
+    border: 1px solid #1c6b85;
+    border-radius: 2px;
+    color: #828282;
+    margin: 30px auto 195px;
+    padding: 15px 20px 16px 40px;
+    position: relative;
+    width: 834px;
+}
+.copylink .WJButton {
+    position: absolute;
+    right: 22px;
+    top: 10px;
+}
+.WJcontent {
+    margin: 20px auto;
+    min-height: 450px;
+    width: 930px;
+}
+select {
+    border: 1px solid #77a5b4;
+    min-width: 150px;
+}
+.bggray {
+    background-color: #efefef;
+}
+.titlec {
+    text-align: center;
+}
+.titlec h2 {
+    line-height: 32px;
+}
+.reduce {
+    display: inline-block;
+    float: right;
+    height: 22px;
+    margin-top: -3px;
+    vertical-align: middle;
+    width: 19px;
+}
+.arrowup {
+    border-bottom: medium none !important;
+    display: inline-block;
+    font-size: 30px !important;
+    margin: 8px 0 0 9px;
+    padding: 0 0 0 5px;
+    vertical-align: middle;
+    width: 10px;
+    z-index: 1;
+}
+.arrowupt {
+    border-color: #9d9d9d transparent transparent;
+    border-style: solid dashed dashed;
+    border-width: 5px 5px 0;
+    color: inherit;
+    font: 0px/9999px serif;
+    height: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    width: 0;
+    z-index: 1;
+}
+.charthead {
+    position: relative;
+}
+.shquestion {
+    position: absolute;
+    top: 0;
+}
+.flspan {
+    float: left;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+.shquestion select {
+    padding: 2px;
+}
+.newdata {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 199;
+}
+.ansimg {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+}
+.anshead {
+    background-color: #efefef;
+    height: 30px;
+    padding: 5px;
+}
+.anshead table {
+    width: auto;
+}
+.anshead .flspan {
+    margin-top: 2px;
+}
+.anshead select {
+    padding: 2px;
+}
+:root .anshead select {
+    padding: 2px;
+}
+.ques .anshead table td tr .add-div {
+    margin-left: 10px;
+}
+.add-div {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #858585;
+    cursor: pointer;
+    height: 18px;
+    padding: 4px 35px 4px 15px;
+    position: relative;
+}
+.add-div .arrowup {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+.add-div_share {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #858585;
+    cursor: pointer;
+    height: 18px;
+    padding: 4px;
+    text-align: center;
+    width: 60px;
+}
+.off_share {
+    border: 1px solid #e4e4e4 !important;
+    color: #e4e4e4 !important;
+    cursor: default !important;
+}
+.add-div span {
+    display: inline-block;
+}
+.special span {
+    padding-left: 14px !important;
+}
+.specialall span {
+    padding-left: 14px !important;
+}
+.date {
+    width: 155px;
+}
+.datetitle {
+    text-align: center;
+    width: 120px;
+}
+.showimg {
+    padding: 5px 0 30px;
+    text-align: center;
+}
+.showimg table td {
+    text-align: left;
+}
+.showimg td {
+    padding: 3px 10px;
+}
+.tblist {
+    border-left: 1px solid #cacaca;
+    border-top: 1px solid #cacaca;
+}
+.tblist td {
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    color: #444;
+}
+.tblist tr:hover td {
+    background-color: #f7f7f7;
+}
+.tblist td:last-child {
+    border-right: 1px solid #cacaca !important;
+}
+.tblist tr:last-child td {
+    border-bottom: 1px solid #cacaca !important;
+    color: #bbb;
+}
+.tblist tr:first-child td {
+    color: #bbb;
+}
+.tblist tr:last-child:hover td {
+    background-color: #fff;
+}
+.tblist tr:first-child:hover td {
+    background-color: #fff;
+}
+.default {
+    background-color: #fff;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    display: none;
+    margin-top: 1px;
+    min-width: 78px;
+    position: absolute;
+    z-index: 2;
+}
+.default li {
+    border-bottom: 1px solid #dbdbdb;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    padding: 3px 15px;
+}
+.default li:hover {
+    background-color: #f7f7f7;
+    color: #1c6b85;
+}
+.dateul {
+    width: 260px;
+}
+.dateul li {
+    width: 230px;
+}
+.specialallul li {
+    width: 175px;
+}
+.fir {
+    margin-left: 63px;
+}
+.plr {
+    padding-left: 10px;
+}
+[class^="chart-icon"] i, [class*="chart-icon"] i {
+    background-image: url("/static/images/chart.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    margin-right: 0.3em;
+    vertical-align: middle;
+    width: 20px;
+}
+.stackcolumn i {
+    background-position: 0 -40px;
+}
+.stackbar i {
+    background-position: 0 -62px;
+}
+.pie i {
+    background-position: 0 0;
+}
+.donut i {
+    background-position: 0 -20px;
+}
+.histogram i {
+    background-position: 0 -40px;
+}
+.bar i {
+    background-position: 0 -60px;
+}
+.column i {
+    background-position: 0 -80px;
+}
+.bar i {
+    background-position: 0 -100px;
+}
+.line i {
+    background-position: 0 -120px;
+}
+.radar i {
+    background-position: 0 -140px;
+}
+.csv i {
+    background-position: 0 -160px;
+}
+.xls i {
+    background-position: 0 -180px;
+}
+.jpg i {
+    background-position: 0 -200px;
+}
+.pie_off i {
+    background-position: -20px 0;
+}
+.donut_off i {
+    background-position: -20px -2px;
+}
+.histogram_off i {
+    background-position: -20px -40px;
+}
+.bar_off i {
+    background-position: -20px -60px;
+}
+.column_off i {
+    background-position: -20px -80px;
+}
+.bar_off i {
+    background-position: -20px -100px;
+}
+.line_off i {
+    background-position: -20px -120px;
+}
+.radar_off i {
+    background-position: 0 -140px;
+}
+.csv_off i {
+    background-position: -20px -160px;
+}
+.xls_off i {
+    background-position: -20px -180px;
+}
+.jpg_off i {
+    background-position: -20px -200px;
+}
+.chartdiv {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: relative;
+    width: 840px;
+}
+.charttable table {
+    border-left: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    margin: 0 auto;
+    text-align: left;
+    width: 650px;
+}
+.charttable table tr:first-child, .bggray {
+    background-color: #efefef;
+}
+.charttable table tr td {
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    padding: 6px;
+}
+.alignr {
+    text-align: right;
+}
+.alignc {
+    text-align: center;
+}
+.deletediv {
+    padding: 20px;
+}
+.scross .anshead table {
+}
+.pag {
+    height: 19px;
+}
+.addpeo {
+    color: #4c4c4c;
+}
+.addpeo i {
+    display: inline-block;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: middle;
+    width: 19px;
+}
+.scrchart {
+    padding: 20px;
+}
+.scrchart table tr td {
+    padding-top: 6px;
+}
+.scrchart select {
+    width: 250px;
+}
+.surveytitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+.number {
+    color: #dadada;
+    margin-bottom: 30px;
+}
+.tableborder {
+    min-height: 500px;
+    width: 100%;
+}
+.tablehead tr td {
+    border-top: 1px solid #efefef;
+    line-height: 25px;
+    margin-left: 10px;
+    padding: 2px 20px;
+}
+.tablehead tbody tr {
+    cursor: pointer;
+}
+.tablehead thead tr td {
+    background-color: #efefef;
+}
+.lookicon i {
+    background-image: url("/static/images/wjsj_toolico_off.png");
+    background-position: -21px -164px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 19px;
+}
+.Excludeicon i {
+    background-image: url("/static/images/wjsj_toolico_off.png");
+    background-position: -100px -303px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 20px;
+}
+.Excludeicon_off i {
+    background-image: url("/static/images/wjsj_toolico_off.png");
+    background-position: -78px -303px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 20px;
+}
+.active i {
+}
+.trActive {
+    background: #f7f7f7 none repeat scroll 0 0;
+}
+.trActive_c td {
+    color: #1c6b85;
+}
+.preview {
+    background-color: #efefef;
+    border: 1px solid #dbdbdb;
+    margin: 2px 100px;
+    min-height: 400px;
+    padding: 15px;
+}
+.prehead table {
+    margin: 0 auto;
+    width: 96%;
+}
+.borderb {
+    border-bottom: 1px solid #dbdbdb;
+}
+.mleft {
+    margin-left: 10px;
+}
+.mtop {
+    margin-top: 10px;
+}
+.ansimg {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+}
+.anshead {
+    background-color: #fafafa;
+    height: 32px;
+    padding: 5px 10px;
+}
+.ans {
+    padding: 5px 10px;
+}
+.right i {
+    background: rgba(0, 0, 0, 0) url("/static/images/frontpage.png") no-repeat scroll -247px -8px;
+    display: inline-block;
+    height: 61px;
+    width: 31px;
+}
+.left i {
+    background: rgba(0, 0, 0, 0) url("/static/images/frontpage.png") no-repeat scroll -247px -89px;
+    display: inline-block;
+    height: 61px;
+    width: 31px;
+}
+.scroll {
+    position: fixed;
+}
+.left {
+    left: 17px;
+}
+.right {
+    right: 17px;
+}
+.del_cross {
+    cursor: pointer;
+    height: 21px;
+    margin: 0 0 2px 5px;
+    width: 21px;
+}
+.ansimg table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.ansimg .ans table td {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: center;
+}
+.SocialShare {
+}
+.SocialShare p {
+    height: 24px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.SocialShare label {
+    cursor: pointer;
+}
+.SocialShare input[type="checkbox"] {
+    margin-top: 0;
+    vertical-align: middle;
+}
+.share_password {
+    border: 1px solid #75a3b1;
+    margin-left: 10px;
+    padding: 3px;
+}
+.ShareURL {
+    border: 1px solid #1c6b86;
+    color: #0086b8;
+    font-size: 18px;
+    margin-left: 0;
+    padding: 5px 10px;
+    width: 350px;
+}
+.Share_c {
+    margin: 15px 0 0;
+}
+.fxtext {
+    float: left;
+    line-height: 42px;
+    margin-right: 10px;
+}
+.Share_mask {
+    background: #fff none repeat scroll 0 0;
+    height: 170px;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    z-index: 999;
+}
+#share_URL {
+    background: #efefef none repeat scroll 0 0;
+    border: 1px solid #1c6b86;
+    color: #0086b8;
+    display: block;
+    font-size: 18px;
+    margin-left: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: 350px;
+}
+.navData {
+    height: 35px;
+    position: relative;
+}
+.DateData {
+    height: 140px;
+    margin: 10px 0;
+}
+.DateData > p {
+    color: #999;
+}
+.Date_b {
+    color: #1c658b;
+    float: right;
+    font-size: 16px;
+}
+.DateDataCon {
+    float: left;
+    height: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 930px;
+}
+.DateDataN {
+    position: relative;
+}
+.Data_bar {
+    background: #e4e4e4 none repeat scroll 0 0;
+    border-radius: 2px;
+    height: 4px;
+    margin: 45px 0 0 25px;
+}
+.DateDataCon .dateP {
+    position: absolute;
+    top: -5px;
+    width: 120px;
+}
+.DateDataCon .dateP span {
+    color: #b9b9b9;
+}
+.DateDataCon .dateP p {
+    margin: 10px 0;
+    text-align: center;
+}
+.DateDataCon .Now_p {
+    width: 40px;
+}
+.DateDataCon .history_p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.DateDataCon .point {
+    background: #fff url("/static/images/pt.png") no-repeat scroll -3px 1px;
+    display: block;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    width: 18px;
+    z-index: 999;
+}
+.DateDataCon .Pf {
+    background-position: 0 -30px !important;
+    height: 20px;
+    width: 25px;
+}
+.DateDataCon .topBar {
+    background-color: #08c5fd;
+    height: 4px;
+    left: 20px;
+    position: absolute;
+    top: 0;
+    width: 80px;
+    z-index: 0;
+}
+.Dstart {
+    left: 805px;
+    margin-right: 0 !important;
+    margin-top: -4px !important;
+    position: inherit !important;
+}
+.Dstart p {
+    text-align: right !important;
+}
+.Dstart .point {
+    background: #fff url("/static/images/pt.png") no-repeat scroll -3px -55px !important;
+    height: 20px;
+    margin-right: 0 !important;
+    width: 18px;
+}
+.Dstart a {
+    cursor: default !important;
+}
+.Tjj {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #000;
+    min-width: 50px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    z-index: 800;
+}
+.TjjTop span {
+    color: #999999;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.Tjj .tj {
+    background: rgba(0, 0, 0, 0) url("/static/images/N_time.png") no-repeat scroll 0 0;
+    bottom: -9px;
+    height: 9px;
+    position: absolute;
+    width: 18px;
+    z-index: 801;
+}
+.GapFilling {
+    margin: 10px 0;
+    min-height: 300px;
+    text-align: left;
+    width: 100%;
+}
+.Gl {
+    border-collapse: collapse;
+    border-spacing: 0;
+    float: left;
+    width: 100%;
+}
+.Gl td {
+    border-left: 1px solid #efefef;
+}
+.Gl tr td:first-child {
+    border-left: 1px solid #cacaca !important;
+}
+.glb .Gl_list li, .glb .Gl_title {
+    border-left: 1px solid #efefef !important;
+}
+.Gcon {
+    border-right: 1px solid #cacaca;
+    border-top: 1px solid #cacaca;
+    overflow: hidden;
+    position: relative;
+}
+.Gbot {
+    border-bottom: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+    color: #bbbbbb;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+.Gl_title td {
+    border-bottom: 1px solid #efefef;
+    color: #bbbbbb;
+    line-height: 24px;
+    padding: 5px 10px;
+}
+.Gl_list {
+    padding: 0;
+}
+.Gl_list tr:hover td {
+    background-color: #f7f7f7;
+}
+.Gl_list tr:hover td .i {
+    display: block;
+}
+.mat:hover td .i {
+    display: block;
+}
+.G_paging a {
+    color: #bbb;
+    margin-left: 5px;
+}
+.G_paging a:hover {
+    color: #0095cd;
+}
+.Gl_list td {
+    border-bottom: 1px solid #efefef;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 3px 10px;
+}
+.G_paging {
+    float: right;
+}
+.Gl_list td .i {
+    background-position: -21px -163px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+    height: 14px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 19px;
+}
+.Gl_list td .d {
+    background-position: -105px -343px !important;
+}
+.Gl_title td .plDow {
+    color: #0095cd;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 68px;
+}
+.Gl_title td .i {
+    background-position: -21px -164px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block !important;
+    height: 14px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 19px;
+}
+.get_page {
+    border: 1px solid #bbb;
+    margin: 0 5px 0 10px;
+    padding: 0;
+    vertical-align: middle;
+    width: 30px !important;
+}
+.matTd {
+    color: #bbb;
+}
+.Gl .lbn {
+    border-left: medium none;
+    text-align: center;
+    width: 24px;
+}
+.Active_c td {
+    color: #cccccc !important;
+}
+.No_arrows {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.eyes {
+    background-position: -21px -164px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: none;
+    height: 14px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 19px;
+}
+.Gls {
+    border-collapse: collapse;
+    border-spacing: 0;
+    float: left;
+    width: 100%;
+}
+.Gls td {
+    border-left: 1px solid #cacaca;
+}
+.Gls tr:first-child td {
+    border-top: 1px solid #cacaca;
+}
+.Gls tr td:last-child {
+    border-right: 1px solid #cacaca;
+}
+.glb .Gls_list li, .glb .Gls_title {
+    border-left: 1px solid #cacaca !important;
+}
+.Gls_list td .j {
+    background-position: -21px -164px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 14px;
+    margin-right: 0.1em;
+    vertical-align: middle;
+    width: 19px;
+}
+.Gls_list td {
+    border-bottom: 1px solid #cacaca;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 3px 10px;
+}
+.Gls .lbn {
+    border-left: medium none;
+    text-align: center;
+    width: 24px;
+}
+.ShareBox {
+    border: 1px solid #dbdbdb;
+    margin: 20px auto 0;
+    width: 970px;
+}
+.tabs li a {
+    color: #555555;
+}
+.tabs li.act {
+    background-color: #fff;
+}
+.tabs li.act a {
+    color: #63adcb;
+}
+.tabs {
+    float: right;
+    margin: 0 15px -1px 0;
+}
+.tabs li {
+    background-color: #d2d2d2;
+    color: #555555;
+    display: inline;
+    float: left;
+    line-height: 19px;
+    margin-right: 0;
+    padding: 5px 10px;
+}
+.tabs li i {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    float: left;
+    height: 17px;
+    margin: 2px 6px 0 0;
+    width: 20px;
+}
+.tabs li .i1 {
+    background-position: -46px -412px;
+}
+.tabs li .i2 {
+    background-position: -45px -436px;
+}
+.tabs li.act .i1 {
+    background-position: -22px -412px;
+}
+.tabs li.act .i2 {
+    background-position: -22px -436px;
+}
+.ShareBox_top {
+    background-color: #efefef;
+    float: left;
+    padding-top: 20px;
+    width: 100%;
+}
+.ShareBox_title {
+    float: left;
+    margin-left: 20px;
+}
+.ShareBox_title h1 {
+    display: inline;
+    margin: 0;
+}
+.ShareBox_title span {
+    padding-left: 15px;
+}
+.TransverseTextarea {
+    height: 100px;
+    margin: 10px 0 15px;
+    resize: none;
+    width: 463px;
+}
+.selectTransverse select {
+    float: left;
+    margin: 0 10px 0 0;
+}
+.dateS {
+    float: left;
+    margin: 10px;
+}
+.plDowBox {
+    margin: 10px;
+}
+.plDowBox textarea {
+    height: 260px;
+    margin-top: 10px;
+    resize: none;
+    width: 550px;
+}
+.tablehead {
+    border: 1px solid #ccc;
+    border-collapse: initial;
+    float: left;
+}
+.chart_point {
+    color: #999;
+    left: 0;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.overview_info {
+    overflow: hidden;
+    padding: 23px 0;
+}
+.overview_info h2 {
+    font-size: 16px;
+}
+.overview_info .sz {
+    color: #fa9b9b;
+    font-size: 31px;
+    line-height: 31px;
+    margin: 5px 0 0;
+    min-height: 31px;
+}
+.overview_info .szNull {
+    color: #888;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 5px auto 0;
+    min-height: 31px;
+    width: 100px;
+}
+.overview_info .overview_list {
+    border-right: 1px solid #e8e8e8;
+    display: inline-block;
+    float: left;
+    margin-right: -1px;
+}
+.overview_info .overview_list:last-child {
+    border-right: 1px solid #fff;
+}
+.Crowd {
+    float: left;
+    margin: 0 50px 0 30px;
+    padding-top: 80px;
+    width: 400px;
+}
+.Crowd div {
+    background-image: url("/static/images/people.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    float: left;
+    height: 50px;
+    margin: 0 12px 5px 0;
+    width: 25px;
+}
+.Crowd .men {
+    background-position: 0 0;
+}
+.Crowd .wom {
+    background-position: -22px 0;
+}
+.add-div span input {
+    border: medium none;
+    margin: -2px 0 0;
+    width: 170px;
+}
+.dateCon {
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+}
+.dateCon .kalendae {
+    background-color: #fff;
+}
+.dateCon .stopbtn {
+    display: inherit;
+    margin: 10px 5px 8px;
+}
+.dateCon .dateInput {
+    text-align: center;
+}
+.color_grap {
+    color: #cccccc;
+}
+.Views {
+    left: 80px;
+    position: absolute;
+    top: 353px;
+}
+.person_info {
+    color: #2b2a2a;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 26px;
+    position: absolute;
+    right: 157px;
+    text-align: left;
+    top: 175px;
+    width: 120px;
+    z-index: 99;
+}
+.person_info .maC {
+    color: #1189ee;
+}
+.person_info .woC {
+    color: #b14173;
+}
+.loadingimg {
+    background: rgba(0, 0, 0, 0) url("/static/images/Bigloading.gif") no-repeat scroll 0 0;
+    height: 32px;
+    margin: 10px auto;
+    width: 32px;
+}
+.i_help {
+    background: rgba(0, 0, 0, 0) url("/static/images/help.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin: 8px 0 0 6px;
+    vertical-align: top;
+    width: 20px;
+}

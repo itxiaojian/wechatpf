@@ -1,0 +1,63 @@
+
+.bg1 {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #58cbfa;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-top-width: 2px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15);
+    height: 57px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.style1 {
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.wwx_f_l {
+    float: left;
+    top: 11px;
+}
+
+
+.font1 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+a {
+    color: #333;
+    cursor: pointer;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+
+.input1 {
+    height: 30px;
+    margin-left: 5%;
+    width: 60%;
+}
+
+.anniu {
+    left: 80%;
+    position: absolute;
+    top: 15%;
+}
+
+.text{color:red;}

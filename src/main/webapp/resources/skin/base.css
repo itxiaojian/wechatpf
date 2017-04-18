@@ -1,0 +1,1008 @@
+
+* {
+    font-family: "microsoft yahei","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+}
+body, input, textarea, select {
+    font-family: "microsoft yahei",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+body, h1, h2, h3, h4, p, ul, ol, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style-type: none;
+    padding-left: 0;
+}
+input, textarea, select {
+    outline: medium none;
+    vertical-align: bottom;
+}
+img {
+    border: medium none;
+}
+a {
+    color: #434a5d;
+    outline: medium none;
+    text-decoration: none;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.PR15 {
+    padding-right: 0;
+}
+table {
+    border-spacing: 0;
+}
+textarea {
+    border: 1px solid #77a5b4;
+    margin: 5px;
+    min-height: 21px;
+    overflow: auto;
+    resize: none;
+}
+.wjContent .question img, .wjContent .wjintro img, .wjContent .wjtitle img {
+    display: none;
+}
+body, input, button, select, textarea, th, td {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+body {
+    background: #efefef none repeat scroll 0 0;
+/*     padding-top: 60px !important; */
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.tc {
+    text-align: center;
+}
+h4 {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+.wjContent p a {
+    display: inline-block;
+}
+.icheckbox_minimal, .icheckbox_minimal-red, .icheckbox_minimal-green, .icheckbox_minimal-blue, .icheckbox_minimal-aero, .icheckbox_minimal-grey, .icheckbox_minimal-orange, .icheckbox_minimal-yellow, .icheckbox_minimal-pink, .icheckbox_minimal-purple, .iradio_minimal, .iradio_minimal-red, .iradio_minimal-green, .iradio_minimal-blue, .iradio_minimal-aero, .iradio_minimal-grey, .iradio_minimal-orange, .iradio_minimal-yellow, .iradio_minimal-pink, .iradio_minimal-purple {
+    left: 0;
+    position: absolute;
+    top: 1px;
+}
+.icheckbox_div {
+    padding-bottom: 10px;
+    position: relative;
+}
+.icheckbox_div a {
+    display: inline-block;
+}
+.icheckbox_div label {
+    max-width: 650px;
+    vertical-align: middle;
+}
+.table_icheckbox_div {
+    height: 18px;
+    margin: 0 auto;
+    width: 18px;
+}
+.pleft {
+    padding-left: 0;
+}
+.mtop {
+    margin-top: 20px;
+}
+.maxtop {
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+}
+.wjlogo img {
+    display: none;
+}
+.wjContent {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dbdbdb;
+    margin: 0 auto 10px;
+    min-height: 200px;
+    padding: 5%;
+    position: relative;
+    width: 814px;
+    word-break: normal;
+    z-index: 99;
+}
+.wjImgTop {
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.wjtitle {
+    float: left;
+    width: 100%;
+}
+.wjtitle h3 {
+    color: #4c4c4c;
+    font-size: 18px;
+    text-align: center;
+}
+.wjtitle h1 {
+    color: #4c4c4c;
+    font-size: 18px;
+    text-align: center;
+}
+.wjintro, .wjintro {
+    font-size: 16px;
+}
+.wjintro {
+    float: left;
+    width: 100%;
+}
+.wjerror p {
+    color: red;
+    text-align: center;
+}
+.wjhr {
+    background-color: #f29400;
+    float: left;
+    height: 3px;
+    width: 100%;
+}
+.radio, .checkbox {
+    min-height: 20px;
+    padding-left: 20px;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    float: left;
+    margin-left: -20px;
+}
+input[type="radio"], input[type="checkbox"] {
+    cursor: pointer;
+    line-height: normal;
+    margin: 4px 0 0;
+}
+.wjtable {
+    border-left: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    margin-right: 0;
+    text-align: center;
+}
+.wjtable tr td {
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    overflow: hidden;
+    padding: 5px;
+}
+.wjtable tr td input {
+    margin-bottom: 4px;
+    margin-top: 5px;
+}
+.wjtable tr td input[type="text"] {
+    width: 97%;
+}
+.blank {
+    border: 1px solid #77a5b4;
+    padding: 2px 5px;
+}
+.caption {
+    border: 1px solid #dbdbdb;
+    height: 100px;
+    resize: none;
+    width: 500px;
+}
+.title {
+    float: left;
+    font-size: 16px;
+    margin-left: -15px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    position: relative;
+    width: 100%;
+}
+.title .Qnum {
+    left: -38px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 40px;
+}
+.title p {
+}
+.tip {
+    padding-left: 8px;
+    padding-top: 10px;
+}
+input[type="text"] {
+    border: 1px solid #77a5b4;
+}
+.tip_table tr td {
+    color: #003399;
+    font-size: 12px;
+}
+.back_n {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+.div_float {
+    background-color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+}
+.td_score {
+    font-size: 12px;
+}
+.table_score {
+    background: #ffffff url("/static/images/piont_lv.png") repeat scroll 0 0;
+    border: 1px solid #dbdbdb;
+    height: 20px;
+    width: 355px;
+}
+.matrix {
+    float: left;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+.wjques {
+    padding-left: 15px;
+}
+.Sorting {
+    float: left;
+    margin-right: 15px;
+    min-height: 100px;
+    width: 230px;
+}
+.Sorting_r {
+    height: 100%;
+    min-height: 100px;
+    position: absolute;
+    right: 14px;
+    top: 1px;
+    width: 232px;
+}
+.Sorting_r li {
+    float: left;
+    margin-bottom: 7px;
+    margin-top: 8px;
+    padding: 1px 0;
+}
+.pxla {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 0 10px;
+    min-width: 200px;
+    padding: 0 6px;
+    text-align: left;
+}
+.matrix_sel {
+    border: 1px solid #77a5b4;
+    line-height: 24px;
+    min-width: 150px;
+    padding: 3px;
+}
+.sort-left, .sort-right {
+    float: left;
+    position: relative;
+    width: 300px;
+}
+.pxul {
+    display: inline-block;
+    margin-top: 15px;
+}
+.unstyled li {
+    overflow: hidden;
+    padding: 9px 0 8px;
+}
+.table2 {
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.table2 td, .table2 th {
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    text-align: center;
+}
+.table2 th {
+    background: #efefef none repeat scroll 0 0;
+}
+.table-noborder td {
+    padding: 8px;
+}
+.table-noborder input {
+    margin-bottom: 0;
+}
+.w28 {
+    color: #1c6b85;
+    width: 28px;
+}
+.WJButton {
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 2px;
+    outline: medium none;
+    padding: 0.3em 1em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.wj_color {
+    background: #f29400 none repeat scroll 0 0;
+    color: #f7f7f7;
+    margin-top: 4px;
+}
+.wj_color:hover {
+    opacity: 0.8;
+}
+.wj_color:active {
+    color: #836500;
+}
+.btns {
+    height: 40px;
+}
+.wjprogress {
+    float: right;
+    text-align: center;
+    width: 210px;
+}
+.bar {
+    border: 1px solid #dbdbdb;
+    height: 7px;
+    text-align: left;
+    width: 208px;
+}
+.barbox {
+    background-color: #f29400;
+    height: 7px;
+    width: 20%;
+}
+.footer_mini {
+    color: #828282;
+    font-size: 12px;
+    margin-top: 6px;
+    min-height: 100px;
+    min-width: 990px;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+}
+.footer {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 983px;
+}
+.ma_auto {
+    float: none !important;
+    margin: 0 auto;
+    width: 97px;
+}
+.instructions {
+    color: #999999;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.wjtext {
+    margin-top: 5px;
+    text-align: center;
+}
+.wjtext a {
+    color: #4c8efa;
+    display: inline-block;
+    margin: 0 2px;
+}
+.wjimg {
+    background: rgba(0, 0, 0, 0) url("/static/images/wenjuan_logo_mini.png") no-repeat scroll 0 0;
+    height: 29px;
+    margin-left: 5px;
+    width: 45px;
+}
+.red {
+    color: red;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.matrix_score {
+    cursor: pointer;
+}
+.invalid {
+    background-color: #ffebeb;
+    position: relative;
+    z-index: 2;
+}
+.popupCover, .popupComponent {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.popupComponent {
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.popupCover {
+    background: #fff none repeat scroll 0 0;
+}
+.jsbox {
+    border-collapse: collapse;
+    border-radius: 5px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1300;
+}
+.jsboxContent {
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.fL {
+    float: left;
+    margin: 8px 0 0 8px;
+}
+.ui-sortable-placeholder {
+    display: none !important;
+}
+.jda {
+    background: #fdf9cd none repeat scroll 0 0;
+}
+.pwd_win span {
+    display: block;
+    line-height: 36px;
+}
+.pwd_win .pwd_title {
+    font-size: 24px;
+}
+.pwd_win .pwd {
+    border: 1px solid #77a5b4;
+    font-size: 18px;
+    height: 36px;
+    line-height: 36px;
+    margin: 20px 0;
+    padding: 2px;
+    width: 350px;
+}
+.WJButton {
+    border: medium none;
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 2px;
+    outline: medium none;
+    padding: 0.3em 2em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+:root .WJButton {
+    padding: 0.3em 2em;
+}
+.wj_orange {
+    background: #f78d1d none repeat scroll 0 0;
+    color: #fef4e9;
+}
+.wj_orange:hover {
+    background: #f47c20 none repeat scroll 0 0;
+}
+.wj_orange:active {
+    color: #fcd3a5;
+}
+.wj_blue {
+    background: #0095cd none repeat scroll 0 0;
+    color: #f7f7f7;
+}
+.wj_blue:hover {
+    background: #007ead none repeat scroll 0 0;
+}
+.wj_blue:active {
+    color: #80bed6;
+}
+.wj_white {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dbdbdb;
+    color: #4c4c4c;
+}
+.wj_white:hover {
+    background: #efefef none repeat scroll 0 0;
+    color: #4c4c4c;
+}
+.wj_white:active {
+    color: #858585;
+}
+.wj_gray {
+    background: #ebebeb none repeat scroll 0 0;
+    color: #45809e;
+}
+.wj_gray:hover {
+    background: #0095cd none repeat scroll 0 0;
+    color: #fff;
+}
+.wj_gray:active {
+    color: #858585;
+}
+.icheckbox_div input {
+    margin-left: 10px;
+}
+.clear::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.preview_model {
+    background: #fdf9cd none repeat scroll 0 0;
+    border-bottom: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    left: 50%;
+    margin: 0 auto 0 -448px;
+    padding: 15px 10px 10px;
+    position: absolute;
+    top: 0;
+    width: 875px;
+    z-index: 199;
+}
+.preview_model .pre_l {
+    float: left;
+}
+.preview_model .pre_r {
+    float: right;
+    margin-right: 40px;
+}
+.preview_model .pre_r div {
+    color: #1c658b;
+    float: left;
+    vertical-align: middle;
+}
+.preview_model .pre_r i {
+    background-repeat: no-repeat;
+    float: left;
+    height: 13px;
+    margin: 3px 0 0 5px;
+    width: 13px;
+}
+.preview_model .mobile_Code {
+    cursor: pointer;
+}
+.preview_model .show_ewm {
+    background-position: 0 -35px;
+}
+.preview_model .hide_ewm {
+    background-position: 0 0;
+}
+.preview_model .preview_close {
+    background-image: url("/static/images/arrow_updowno.png");
+    background-position: 0 -18px;
+    background-repeat: no-repeat;
+    display: none;
+    height: 13px;
+    position: absolute;
+    right: 12px;
+    top: 18px;
+    width: 13px;
+}
+.preview_model .qrCode {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    position: absolute;
+    right: 28px;
+    top: 40px;
+}
+.preview_model .qrCode p {
+    margin-top: 2px;
+    padding: 5px 0 0 5px;
+}
+.cols_li {
+    display: inline-block;
+    line-height: 17px;
+    vertical-align: top;
+}
+.cols_li input[type="text"] {
+    height: 20px;
+    margin-left: 0;
+    margin-top: 5px;
+    width: 50%;
+}
+.cols_li label {
+    line-height: 30px;
+    margin-right: 5px;
+    padding-left: 25px;
+    vertical-align: middle;
+}
+.cols_li > span {
+    position: absolute;
+    vertical-align: middle !important;
+}
+.cols_li a {
+    vertical-align: middle !important;
+}
+.cols_li input {
+    vertical-align: middle !important;
+}
+.selectTransverse select {
+    border: 1px solid #77a5b4;
+    margin: 0 10px 0 0;
+}
+.Time_con select {
+    margin-right: 5px;
+}
+.Time_con span {
+    line-height: 25px;
+    margin-right: 5px;
+}
+.question_date input {
+    padding: 5px;
+    vertical-align: inherit !important;
+}
+.questionTel input {
+    padding: 3px 5px;
+    width: 200px;
+}
+.selectTransverse p textarea {
+    margin: 5px 0;
+    width: 323px;
+}
+.questionImgBox {
+    border: 1px solid #ccc;
+    float: left;
+    min-height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+.abor {
+    border: 1px dashed #ccc !important;
+}
+.Imgli li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    vertical-align: top;
+}
+.questionImgBox .QImgCon {
+    min-height: 80px;
+}
+.questionImgBox .QImgCon {
+    height: 150px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+.questionImgBox label {
+    max-width: 120px;
+    text-align: left;
+    vertical-align: middle;
+}
+.AddQImgCon {
+    height: 177px;
+    width: 150px;
+}
+.ImgBox_loading {
+    height: 150px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    width: 150px;
+}
+.ImgBox_loading .ProgressBar {
+    border: 1px solid #efefef;
+    height: 20px;
+    margin: 60px 5px 0;
+    padding: 1px;
+}
+.ImgBox_loading .ProgressBar .pbg {
+    background-color: #28a3e3;
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+.cjimg {
+    min-height: 200px;
+}
+.cjimg img {
+    margin: 0 auto;
+}
+.pic_cancel {
+    background: rgba(0, 0, 0, 0) url("/static/images/pic_ico.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    height: 37px;
+    position: absolute;
+    width: 37px;
+}
+.upFile {
+    float: left;
+    margin-top: 10px;
+}
+.upFile span {
+    color: #b1b1b1;
+    float: left;
+    margin-top: 3px;
+}
+.upFile_i {
+    background: rgba(0, 0, 0, 0) url("/static/images/atta.png") no-repeat scroll center center;
+    float: left;
+    height: 23px;
+    margin: 2px 10px 0 0;
+    width: 23px;
+}
+.Hbuttom {
+    background-color: #f7f7f7;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 5px;
+}
+.upBut {
+    height: 27px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.DividingLine {
+    border-bottom: 1px dashed #ccc;
+    height: 20px;
+    margin-left: 5px;
+}
+.upFile .red {
+    color: red;
+}
+.file-box {
+    padding-left: 110px;
+    position: relative;
+}
+.file-box iframe {
+    overflow: hidden;
+}
+.conthank p {
+    font-size: 18px;
+}
+.file-box .poa {
+    font-size: 16px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+.file-box .selectFile {
+    cursor: pointer;
+    font-size: 16px;
+    height: 28px;
+    left: -5px;
+    opacity: 0;
+    position: absolute;
+    width: 90px;
+    z-index: 99;
+}
+.file-box .Hbuttom {
+    float: left;
+}
+.upFile .span_text {
+    color: #b1b1b1;
+    float: left;
+    width: 100%;
+}
+.loadingimg {
+    background: rgba(0, 0, 0, 0) url("/static/images/Bigloading.gif") no-repeat scroll 0 0;
+    display: none;
+    float: left;
+    height: 32px;
+    margin: -4px 10px 0 0;
+    width: 32px;
+}
+.Lock_ico {
+    cursor: help;
+    display: inline-block;
+    height: 16px;
+    margin: -5px 5px 0 8px;
+    vertical-align: middle;
+    width: 14px;
+}
+select {
+    border: 1px solid #77a5b4;
+    padding: 1px;
+}
+.WjSaveAs {
+    color: #1c658b;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    padding: 2px 0 0;
+}
+#question_box {
+    float: left;
+    width: 100%;
+}
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Microsoft Yahei";
+}
+.mask {
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1002;
+}
+.popup {
+    background-color: #fff;
+    border-radius: 10px;
+    float: left;
+    height: 321px;
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    width: 320px;
+    z-index: 9999;
+}
+.pop-content {
+    padding: 0 35px;
+}
+.pop-title {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px 0 20px;
+    text-align: center;
+}
+.popup p {
+    color: #818181;
+    text-align: center;
+}
+.wxbg {
+    background: rgba(0, 0, 0, 0) url("/static/img/survey_mobile/wxicon2.png") no-repeat scroll 0 0 / cover ;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    height: 31px;
+    margin-left: 15px;
+    text-align: left;
+    width: 38px;
+}
+.wxtxt {
+    display: inline;
+    float: left;
+    font-size: 14px;
+    height: 38px;
+    line-height: 28px;
+    padding-left: 5px;
+    text-align: left;
+}
+.tcode {
+    clear: both;
+    margin-bottom: 20px;
+    margin-top: 26px;
+    text-align: center;
+}
+.instructions {
+    position: relative;
+}
+.yingyin {
+    color: #fff !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+.yingyin span {
+    color: #fff !important;
+}
+.gblogo_zh_CN {
+    background: rgba(0, 0, 0, 0) url("/static/images/cp.png") no-repeat scroll 0 0;
+    display: block !important;
+    height: 16px;
+    margin: 0 auto !important;
+    width: 104px;
+}
+.gblogo_en_US {
+    background: rgba(0, 0, 0, 0) url("/static/images/cp_EN.png") no-repeat scroll 0 0;
+    display: block !important;
+    height: 16px;
+    margin: 0 auto !important;
+    width: 164px;
+}
+.jubao {
+    color: #bababa;
+    position: absolute;
+    right: 45px;
+    text-shadow: none;
+    top: 0;
+}
+.QScorelist .option_label {
+    height: 30px;
+    padding: 5px;
+    text-align: right;
+}
+#loader_div {
+    border-radius: 16px;
+}
+.wjerror {
+    float: left;
+    width: 100%;
+}
+.tdiv {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+}
+.QSingle .option_label, .QMultiple .option_label {
+    display: inline;
+}
+.option_open {
+    width: 145px;
+}
+textarea[class="option_open"] {
+    width: auto;
+}
+.Error_message {
+    display: inline-block;
+    padding: 70px 0 20px;
+    text-align: center;
+    width: 100%;
+}
+.Error_message span {
+    color: #ee5255;
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px 0;
+    width: 100%;
+}
+.Error_message div {
+    float: initial;
+}
+.Error_message a {
+    float: initial;
+}
+.wj_color_gray {
+    background: #cccccd none repeat scroll 0 0;
+    color: #f7f7f7;
+}
+.Error_show {
+}
+.Error_show p {
+    text-align: center;
+}
+.Error_show .e_red {
+    font-size: 18px;
+}

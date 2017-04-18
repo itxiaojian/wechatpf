@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sliu.framework.app.sys.mapper.SysMapper">
+	<select id="listAllRoleResources" resultType="pureMap">
+		select
+			a.jsbh as role_id,
+			jsmc as role_name,
+			cdbh as resource_id 	
+		from 
+			sys_jscd a inner join sys_js b on a.jsbh=b.jsbh
+	</select>
+	
+	<select id="listAllUser_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		from
+        	sys_yh this_
+		where 1=1
+		<if test="Q_yhbh_S_NEQ != null and Q_yhbh_S_NEQ != ''">
+			and	this_.yhbh!=#{Q_yhbh_S_NEQ}			
+		</if>
+		<if test="Q_xm_S_LK != null and Q_xm_S_LK != ''">
+			and	this_.xm like CONCAT('%',#{Q_xm_S_LK},'%')			
+		</if>
+		<if test="Q_username_S_LK != null and Q_username_S_LK != ''">
+			and	this_.dlm like CONCAT('%',#{Q_username_S_LK},'%')			
+		</if>
+		<if test="Q_yhzt_N_EQ != null and Q_yhzt_N_EQ != ''">
+			and	this_.yhzt=#{Q_yhzt_N_EQ}			
+		</if>
+	</select>
+	<select id="listAllUser" parameterType="filter" resultType="pureMap">
+		select 
+		        this_.yhbh as yhbh,
+		        this_.bmbh as bmbh,
+		        this_.gwbh as gwbh,
+		        this_.mm as mm,
+		        this_.sjh as sjh,
+		        this_.dlm as username,
+		        this_.xm as xm,
+		        this_.yhzt as yhzt,
+		        this_.yx as yx,
+		        this_.zhdlsj as zhdlsj,
+		        bm.BMMC as bmmc,
+		        a.js
+		from
+		        sys_yh this_  
+		LEFT JOIN
+		        sys_zzjg bm on this_.BMBH=bm.BMBH
+		left join 
+		(	select
+		        this_.yhbh as yhbh,
+		        group_concat(js.bz) as js           
+		    from
+		        sys_yh this_    
+		    LEFT JOIN
+		        sys_yhjs yj on this_.YHBH=yj.YHBH      
+		    LEFT JOIN
+		        sys_js js on yj.JSBH=js.JSBH
+		group by 
+        this_.yhbh ) a on a.yhbh=this_.yhbh
+        where 1=1
+		<if test="Q_yhbh_S_NEQ != null and Q_yhbh_S_NEQ != ''">
+			and	this_.yhbh!=#{Q_yhbh_S_NEQ}			
+		</if>
+		<if test="Q_xm_S_LK != null and Q_xm_S_LK != ''">
+			and	this_.xm like CONCAT('%',#{Q_xm_S_LK},'%')			
+		</if>
+		<if test="Q_username_S_LK != null and Q_username_S_LK != ''">
+			and	this_.dlm like CONCAT('%',#{Q_username_S_LK},'%')			
+		</if>
+		<if test="Q_yhzt_N_EQ != null and Q_yhzt_N_EQ != ''">
+			and	this_.yhzt=#{Q_yhzt_N_EQ}			
+		</if> 
+		limit #{start},#{limit}
+	</select>
+	
+	<select id="listUser" parameterType="filter" resultType="pureMap">
+		select
+	        this_.yhbh as yhbh,
+	        this_.bmbh as bmbh,
+	        this_.gwbh as gwbh,
+	        this_.mm as mm,
+	        this_.sjh as sjh,
+	        this_.dlm as username,
+	        this_.xm as xm,
+	        this_.yhzt as yhzt,
+	        this_.yx as yx,
+	        this_.zhdlsj as zhdlsj,
+			bm.BMMC as bmmc,
+			gw.BMMC as gwmc
+    	from
+        	sys_yh this_ 
+		LEFT JOIN
+			sys_zzjg bm on this_.BMBH=bm.BMBH
+		LEFT JOIN
+			sys_zzjg gw on this_.GWBH=gw.BMBH
+		where 1=1
+		<if test="Q_yhbh_S_EQ != null and Q_yhbh_S_EQ != ''">
+			and	this_.yhbh=#{Q_yhbh_S_EQ}			
+		</if>
+	</select>
+	
+	<select id="listAllUserAtRole_count" parameterType="filter" resultType="int">
+		SELECT 
+			count(1)
+		from
+        	sys_yh this_
+		where 1=1
+		<if test="Q_yhbh_S_NEQ != null and Q_yhbh_S_NEQ != ''">
+			and	this_.yhbh!=#{Q_yhbh_S_NEQ}			
+		</if>
+		<if test="Q_xm_S_LK != null and Q_xm_S_LK != ''">
+			and	this_.xm like CONCAT('%',#{Q_xm_S_LK},'%')			
+		</if>
+		<if test="Q_username_S_LK != null and Q_username_S_LK != ''">
+			and	this_.dlm like CONCAT('%',#{Q_username_S_LK},'%')			
+		</if>
+		<if test="Q_yhzt_N_EQ != null and Q_yhzt_N_EQ != ''">
+			and	this_.yhzt=#{Q_yhzt_N_EQ}			
+		</if>
+	</select>
+	<select id="listAllUserAtRole" parameterType="filter" resultType="pureMap">
+		select
+	        this_.yhbh as yhbh,
+	        this_.bmbh as bmbh,
+	        this_.gwbh as gwbh,
+	        this_.mm as mm,
+	        this_.sjh as sjh,
+	        this_.dlm as username,
+	        this_.xm as xm,
+	        this_.yhzt as yhzt,
+	        this_.yx as yx,
+	        this_.zhdlsj as zhdlsj,
+			bm.BMMC as bmmc   
+    	from
+        	sys_yh this_ 
+		LEFT JOIN
+			sys_zzjg bm on this_.BMBH=bm.BMBH
+		where 1=1
+		<if test="Q_yhbh_S_NEQ != null and Q_yhbh_S_NEQ != ''">
+			and	this_.yhbh!=#{Q_yhbh_S_NEQ}			
+		</if>
+		<if test="Q_xm_S_LK != null and Q_xm_S_LK != ''">
+			and	this_.xm like CONCAT('%',#{Q_xm_S_LK},'%')			
+		</if>
+		<if test="Q_username_S_LK != null and Q_username_S_LK != ''">
+			and	this_.dlm like CONCAT('%',#{Q_username_S_LK},'%')			
+		</if>
+		<if test="Q_yhzt_N_EQ != null and Q_yhzt_N_EQ != ''">
+			and	this_.yhzt=#{Q_yhzt_N_EQ}			
+		</if>
+		limit #{start},#{limit}
+	</select>
+</mapper>

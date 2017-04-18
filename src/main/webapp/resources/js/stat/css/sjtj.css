@@ -1,0 +1,79 @@
+*,select,option,body,ul,li,a,input{font-family:'微软雅黑';margin:0px; padding:0px; list-style:none; text-decoration:none;}
+body{ margin:0; padding:0px; overflow-x:hidden}
+.phone_01{ width:100%; height:100%; overflow:hidden;}
+.logo{ width:100%; height:150px; background-color:#e5e5e5; position:absolute; top:0; left:0;overflow:hidden; font-size:36px; line-height:120px;}
+.top_01{ width:100%; height:120px; background-color:#e5e5e5; position:absolute; top:0; left:0;overflow:hidden; font-size:36px; line-height:120px;}
+.top_01 select{ font-size:36px; width:300px; height:50px; border-radius:5px; color:#2e87d3;}
+.top_01 span{ float:left;}
+.top_01 img{ margin-top:15%; display:block; float:left;}
+.main_01{width:100%; position:absolute; top:120px; left:0; bottom:98px; background-color:#f2f2f2; overflow:auto;}
+.main_02{width:100%; position:absolute; top:150px; left:0; bottom:98px; background-color:#fff; overflow:auto;}
+.main_01_msg{width:80%; margin-left:10%; margin-right:10%; background-color:#fff; margin-top:5%; float:left;}
+.CX_title_01{ width:100%; height:60px; background-color:#23bcfc; color:#fff; line-height:60px; text-align:center; font-size:36px;}
+.GG_msg_01 li{ width:100%; height:100px; font-size:34px; line-height:100px; }
+.GG_msg_01 img{ float:left; margin-top:3%; margin-left:5%;}
+.CJ_msg_01{ padding-top:10px;}
+.CJ_msg_01 li{ height:100px; font-size:34px; line-height:100px; float:left; text-align:center; border-bottom:#e5e5e5 1px solid;}
+.CJ_msg_02 li{font-size:34px; float:left; width:100%; text-indent:34px; line-height:100px;}
+.CJ_msg_02 span{ float:left; color:#2e87d3;}
+.CJ_msg_01 img{ float:left; margin-top:12%; margin-left:16%;}
+.photo_GR{ position:absolute; top:18%; right:2%;}
+.foot_01{width:100%; height:98px; background-color:#ccc;position:absolute; bottom:0; left:0; overflow:hidden}
+/*微主页*/
+.banner{ width:100%; overflow:hidden;}
+.YM_iocn{width:100%; overflow:hidden;}
+.YM_iocn li{ width:25%; text-align:center; float:left; font-size:36px; color:#666; line-height:100px; }
+.YM_iocn img{ display:block; margin-left:30%; margin-top:15%;}
+.chahua{ position:absolute; bottom:5.5%; right:0%;}
+.FH_btn{ position:absolute; top:3%; right:5%;}
+/*离校流程*/
+.WX_student_msg{ width:94%; border:1px solid #aaa; border-radius:10px; margin-top:40px; float:left; padding-bottom:20px; margin-left:3%}
+.WX_student_msg img { float:left; margin-top:10%; margin-left:10%}
+.WX_student_msg span:nth-of-type(1){ width:30%; float:left}
+.WX_student_msg span:nth-of-type(2){ width:70%; float:left}
+.WX_student_msg li{ font-size:32px; color:#333; float:left; margin-top:20px;}
+.msg_li_width01{ width:40%;}
+.msg_li_width02{width:60%;}
+.msg_li_width03{width:100%;}
+.PD_msg{ font-size:36px; float:left; width:100%; border-bottom:1px solid #ccc;padding-bottom:30px; margin-top:5%;}
+.PD_msg span{ float:right; margin-right:3%;}
+.student_msg_main{ width:94%;float:left; padding-bottom:20px; margin-left:3%}
+.student_msg_main li{ width:32%; height:260px; border:1px solid #ccc; border-radius:10px; float:left; box-sizing:border-box; margin-top:5%; position:relative;}
+.student_msg_main_left{ margin-left:2%}
+.student_msg_title{ font-size:34px; width:100%; float:left; margin-top:20px;}
+.student_msg_Ftitle{ font-size:28px; width:100%; float:left; color:#3aacdf;margin-top:20px; margin-left:10%}
+.msg_ZE{ width:100%; height:50px; background-color:#00a0e9; border:1px #00a0e9 solid; float:left; border-radius:0 0 10px 10px; position:absolute; bottom:0; left:0; text-align:center; line-height:56px;}
+/*流程详细*/
+.XX_msg_main{ width:100%; border-radius:10px; border:1px solid #00a0e9; margin-top:40px; float:left;}
+.XX_msg_lan{ width:100%; height:20px; background-color:#8bc0f2; float:left;}
+.XX_msg_title{ width:100%; height:90px;float:left; font-size:36px; line-height:90px;}
+.XX_msg_JG{ font-size:36px; padding:3%; padding-top:20px; float:left;}
+.XX_msg_JG span{ line-height:70px; width:100%; float:left;}
+.H_color{ color:#666;}
+.fenlan{ width:100%; height:2px; background-color:#8bc0f2; float:left; margin-top:30px; margin-bottom:30px;}
+/*办理流程消息提醒*/
+.XXTI_msg_title{ width:100%; height:100px; background-color:#41a1ce; float:left; font-size:36px; line-height:100px; text-align:center; color:#fff; box-sizing:border-box;}
+.XXTI_msg_main li{ width:100%; height:100px; line-height:100px; border-bottom:1px solid #d9d9d9; float:left;}
+.XXTI_msg_main span{ font-size:36px;}
+.XXTI_msg_H{ float:left; color:#d53301;border-left:8px solid #d53301; text-indent:36px;}
+.XXTI_msg_L{ float:left; color:#03bf0c;border-left:8px solid #03bf0c; text-indent:36px;}
+.XXTI_msg_Y{ float:left; color:#bf9503;border-left:8px solid #bf9503; text-indent:36px;}
+.XXTI_msg_R{ float:right; color:#999;}
+.XXTI_msg_main img{ float:right; margin-top:26px; margin-right:20px;}
+/*录取查询*/
+.BG_luqu{ width:100%; background: url(../image/BG.png) no-repeat center; background-size: cover; height:500px;}
+.input_luqu{ width:650px; height:420px; background-color:#E79193; background: url(../image/input.png) no-repeat center;background-size: contain; margin:auto; margin-top:50px;}
+.input_luqu span{ font-size:34px; line-height:50px; width:100%; float:left; text-align:center; margin-top:60px;}
+.input_luqu input{ width:320px; height:50px; border:1px solid #ccc;font-size:30px; color:#999;}
+.cx_btn{ width:250px; height:70px; background-color:#ec6941; float:left; margin-left:30%; margin-top:56px; font-size:34px; line-height:70px;color:#fff;  text-indent:16px;}
+.input_luqu img{ float:left; margin-top:4%; margin-left:20%}
+.CX_title{ width:100%; border-bottom:#5ec9f9 3px dashed;position:relative;}
+.CX_title span{ width:200px; height:60px; background:#5ec9f9; position:absolute; top:-30px; left:20px; border-radius:50px; line-height:60px; color:#fff; text-align:center; font-size:34px;}
+.CG_luqu{ width:100%; height:700px;; background: url(../image/luqu_BG.png) no-repeat center; background-size:contain;display:none; }
+.CG_luqu span{ font-size:34px; color:#ff6c00; text-align:center; float:left; margin-left:30%; margin-top:26%;}
+/*助学金*/
+.Home_btn{ position:absolute; right:12%; top:30%;}
+.WZY_top01{ width:100%; height:60px; position:fixed; left:0px; top:0px;overflow:hidden;}
+.New_main01{ width:100%;position:absolute; top:60px; left:0px; bottom:40px;overflow:auto;}
+.WZY_foot01{width:100%; height:40px; position:absolute; left:0px; bottom:0px; background-color:#000000;overflow:hidden;}
+/*课表*/

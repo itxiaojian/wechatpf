@@ -1,0 +1,113 @@
+.jsTip_s{position:absolute; min-width:50px; z-index:1000;}
+.jsTip_s .tipCon{
+	background-color:#F3F3F3;
+    border:1px solid #CCCCCC;
+    border-radius:3px 3px 3px 3px;
+    padding:5px;
+	font-size:12px;
+	
+	}
+.jsTip_s .arrowT,.jsTip_s .arrowR,.jsTip_s .arrowB,.jsTip_s .arrowL{
+	position:absolute;
+	font-size:30px!important;
+	z-index:1000;
+	width:30px;
+	border-bottom:none!important;
+	}
+
+.jsTip_close{
+	outline:none;
+    border-radius: 1px 1px 1px 1px;
+    cursor: pointer;
+    display: block;
+    font-size:12px;
+    font-weight: bold;
+    line-height: 1.333;
+    position: absolute;
+    right:5px;
+    text-align:center;
+    top:6px;
+    width:12px;
+	color:#9B9B9B;
+	text-decoration:none;
+}
+.jsTip_close:hover{
+	color:#444 !important;
+	}
+
+.jsTip_s .tipCon_t{z-index:1002; text-align:left;}
+.jsTip_s .arrowt,.jsTip_s .arrowb{
+	font: 0px/9999px serif;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    top:-1px;
+    z-index: 1;
+	width:0px;
+	height:0px;
+	color:inherit;
+}
+.jsTip_s .tipCon_t p{line-height: 21px;}	
+.jsTip_s .arrowT{left:10px;top:-8px; _top:-8px;}
+
+.jsTip_s .arrowT .arrowt{
+	border-width:0 9px 9px; 
+	border-style:dashed dashed solid;
+	border-color:transparent transparent #f3f3f3;
+	z-index:3;
+	top:-1px;
+}
+.jsTip_s .arrowT .arrowb{
+	border-width:0 9px 9px; 
+	border-style:dashed dashed solid;
+	border-color:transparent transparent #ccc;
+}
+
+.jsTip_s .arrowR{ right:-30px; top:7px; _top:7px;}
+
+.jsTip_s .arrowR .arrowt{
+	border-width:7px; 
+	border-style:dashed dashed dashed solid ;
+	border-color:transparent transparent transparent #f3f3f3;
+	z-index:3;
+	left:0px;
+}
+.jsTip_s .arrowR .arrowb{
+	border-width:7px; 
+	border-style:dashed dashed dashed solid ;
+	border-color:transparent transparent transparent #ccc;
+}
+
+.jsTip_s .arrowB{left:20px; bottom:0px; _bottom:0px;}
+
+.jsTip_s .arrowB .arrowt{
+   	border-width:9px 9px 0px; 
+	border-style:solid dashed dashed ;
+	border-color:#f3f3f3 transparent transparent;
+	z-index:3;
+    bottom:-7px; 
+	}
+.jsTip_s .arrowB .arrowb{
+   	border-width:9px 9px 0px; 
+	border-style:solid dashed dashed ;
+	border-color:#ccc transparent transparent;
+	bottom:-8px; 
+	}
+
+.jsTip_s .arrowL{left:-14px;top:7px;_top:7px;}
+
+.jsTip_s .arrowL .arrowt{
+	border-width:7px; 
+	border-style:dashed solid dashed dashed  ;
+	border-color:transparent #f3f3f3 transparent transparent ;
+	z-index:3;
+	left:1px;
+	}
+.jsTip_s .arrowL .arrowb{
+	border-width:7px; 
+	border-style:dashed solid dashed dashed  ;
+	border-color:transparent #ccc transparent transparent ;
+}	
+
+

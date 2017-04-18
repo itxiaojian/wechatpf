@@ -1,0 +1,185 @@
+﻿
+body, input, textarea, select {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+}
+body, h1, h2, h3, h4, p, ul, ol, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style-type: none;
+    padding-left: 0;
+}
+input, textarea, select {
+    outline: medium none;
+    vertical-align: bottom;
+}
+img {
+    border: medium none;
+}
+a {
+    color: #434a5d;
+    display: block;
+    outline: medium none;
+    text-decoration: none;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+}
+body, input, button, select, textarea, th, td {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+body {
+    background: #efefef none repeat scroll 0 0;
+}
+body {
+}
+.tc {
+    text-align: center;
+}
+h4 {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+.wjContent {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #dbdbdb;
+    margin: 0 auto 10px;
+    min-height: 200px;
+    width: 814px;
+}
+.wjContent p {
+}
+.conthank, .consorry {
+    margin: 80px 60px;
+    text-align: center;
+}
+.conthank p, .consorry p {
+    font-size: 18px;
+}
+.noteinfo {
+    padding: 30px 40px;
+}
+.conend {
+    color: red;
+    margin: 80px auto;
+    text-align: center;
+}
+.constop {
+    color: red;
+    margin: 80px auto;
+    text-align: center;
+}
+.advert {
+    background: rgba(0, 0, 0, 0) url("/static/images/idiaoyansample.png") no-repeat scroll 0 0;
+    height: 236px;
+    margin: 0 auto 20px;
+    position: relative;
+    width: 816px;
+}
+.btn {
+    bottom: 63px;
+    height: 45px;
+    position: absolute;
+    right: 328px;
+    width: 161px;
+}
+.footer_mini {
+    color: #828282;
+    font-size: 12px;
+    margin-top: 6px;
+    min-height: 100px;
+    min-width: 990px;
+    width: 100%;
+}
+.footer {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 983px;
+}
+.ma_auto {
+    float: none !important;
+    margin: 0 auto;
+    width: 97px;
+}
+.instructions {
+    color: #999999;
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.wjtext {
+    margin-top: 5px;
+    text-align: center;
+}
+.wjtext a {
+    color: #4c8efa;
+    display: inline-block;
+    margin: 0 2px;
+}
+.wjimg {
+    background: rgba(0, 0, 0, 0) url("/static/images/wenjuan_logo_mini.png") no-repeat scroll 0 0;
+    height: 29px;
+    margin-left: 5px;
+    width: 45px;
+}
+.conerror {
+    margin: 50px auto;
+    text-align: center;
+    width: 470px;
+}
+.conerror h2 {
+    font-size: 21px;
+    margin: 20px 0;
+    text-align: center;
+}
+.conerror .error_text {
+    margin: 40px 0 50px;
+    text-align: left;
+}
+.WJButton {
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 2px;
+    outline: medium none;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.prevButton {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #ccc;
+    margin-right: 10px;
+}
+.prevButton:hover {
+    opacity: 0.6;
+}
+.open_results {
+    background: #85c8ff none repeat scroll 0 0;
+    border-radius: 8px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 2em;
+}
+.show_results {
+    margin: 20px auto 0;
+    padding-top: 30px;
+    text-align: center;
+}

@@ -1,0 +1,211 @@
+
+/*弹出窗口*/
+.dialog_lt{
+	background-image: url(images/dialog_lt.png) !important;
+	background: url(images/dialog_lt.gif) no-repeat 0 0;
+}
+.dialog_ct{
+	background-image:url(images/dialog_ct.png) !important;
+	background: url(images/dialog_ct.gif) repeat-x top;
+}
+.icon_dialog{
+	background-image:url(images/icon_dialog.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+	width:13px;
+	height:13px;
+}
+.dialog_closebtn{
+	background-image:url(images/dialog_closebtn.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+}
+.dialog_closebtn_over{
+	background-image:url(images/dialog_closebtn_over.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+}
+.dialog_maxbtn{
+	background-image:url(images/dialog_maxbtn.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+}
+.dialog_minbtn{
+	background-image:url(images/dialog_minbtn.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+}
+
+.dialog_decreasebtn{
+	background-image:url(images/dialog_decreasebtn.gif)!important;
+}
+.dialog_rt{
+	background-image: url(images/dialog_rt.png) !important;
+	background: url(images/dialog_rt.gif) no-repeat right 0;
+}
+.dialog_mlm{
+	background-image: url(images/dialog_mlm.png) !important;
+	background: url(images/dialog_mlm.gif) repeat-y left;
+}
+.dialog_bg{
+	background:#eaece9 url(images/dialog_bg.jpg) no-repeat scroll right top;
+}
+.dialog_messageIcon{
+	background-image:url(images/window.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+	width:32px;
+	height:32px;
+}
+.dialog_mrm{
+	background-image: url(images/dialog_mrm.png) !important;
+	background: url(images/dialog_mrm.gif) repeat-y right;
+}
+.dialog_lb{
+	background-image: url(images/dialog_lb.png) !important;
+	background: url(images/dialog_lb.gif) no-repeat 0 bottom;
+}
+.dialog_cb{
+	background-image: url(images/dialog_cb.png) !important;
+	background: url(images/dialog_cb.gif) repeat-x bottom;
+}
+.dialog_rb{
+	background-image: url(images/dialog_rb.png) !important;
+	background: url(images/dialog_rb.gif) no-repeat right bottom;
+}
+.icon_alert{
+	background-image:url(images/icon_alert.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+	width:34px;
+	height:34px;
+}
+.icon_query{
+	background-image:url(images/icon_query.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+	width:34px;
+	height:34px;
+}
+
+.dialog_sample_top{
+	border:solid 1px #999999;
+	background-color:#eeeeee;
+	height:32px;
+	font-weight:bold;
+	color:black;
+}
+.dialog__simple_closebtn{
+	background-image:url(images/simple_close.gif);
+	border:0;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	background-position:50% 50%;
+	width:10px;
+	height:10px;
+	margin: 10px 8px 0 0; 
+	position: relative; 
+	top: auto; 
+	cursor: pointer; 
+	float: right;
+}
+.dialog_sample_middle{
+	border-left:solid 1px #999999;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #999999;
+	background-color:#ffffff;
+}
+.dialog_tip_middle{
+	border-left:solid 1px #999999;
+	border-right:solid 1px #999999;
+	background-color:#ffffff;
+}
+.dialog_tip_bottom{
+	height:31px;
+	background-image:url(images/simple_bottomLine.gif);
+	background-repeat:repeat-x;;
+}
+.dialog_tip_bottomArr{
+	height:100%;
+	background-image: url(images/simple_tip.png) !important;
+	background: url(images/simple_tip.gif) no-repeat center top;
+}
+.dialog_shadow_lt{
+	background-image:url(images/shadow_lt.gif);
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+	height:39px;
+	width:220px;
+}
+.dialog_shadow_ct{
+	background-image:url(images/shadow_ct.gif);
+	background-repeat: repeat-x;
+	background-color:#ffffff;
+	height:39px;
+}
+.dialog_shadow_rt{
+	background-image:url(images/shadow_rt.gif);
+	background-repeat:no-repeat;
+	height:39px;
+	width:225px;
+}
+.dialog_shadow_lm{
+	background-image:url(images/shadow_lm.gif);
+	background-repeat: repeat-y;
+	background-color:#ffffff;
+}
+.dialog_shadow_cm{
+	background-color:#ffffff;
+}
+.dialog_shadow_rm{
+	background-image:url(images/shadow_rm.gif);
+	background-repeat: repeat-y;
+}
+.dialog_shadow_lb{
+	background-image: url(images/shadow_lb.png) !important;
+	background-image:url(images/shadow_lb.gif);
+	background-repeat:no-repeat;
+	height:130px;
+	width:220px;
+}
+.dialog_shadow_cb{
+	background-image: url(images/shadow_cb.png) !important;
+	background-image:url(images/shadow_cb.gif);
+	background-repeat: repeat-x;
+	background-position:0 100%;
+	height:130px;
+}
+.dialog_shadow_rb{
+	background-image: url(images/shadow_rb.png) !important;
+	background-image:url(images/shadow_rb.gif);
+	background-repeat:no-repeat;
+	height:130px;
+	width:225px;
+}
+.dialog_shadow_content{
+	position:absolute;
+	z-index:100;
+	padding:0 0 0 4px;
+}
+.dialog_shadow_content_top{
+	height:39px;
+	font-weight:bold;
+	color:black;
+}
+/*弹出窗口*/

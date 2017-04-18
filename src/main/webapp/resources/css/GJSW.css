@@ -1,0 +1,28 @@
+/*全局*/
+*,li,ul,a{ margin:0px; padding:0px; font-family:'微软雅黑'; list-style:none; text-decoration:none;}
+/*微主页*/
+.WZY_top{ width:100%; height:50px; position:fixed; left:0px; top:0px;background: url(../img/wzy/logo.png) center no-repeat; background-size:cover; overflow:hidden;}
+.WZY_top img{ float:right; margin-right:5%; margin-top:3%;}
+.WZY_main{ width:100%;position:absolute; top:50px; left:0px; bottom:32px;overflow:auto; background: url(../img/wzy/FH.png) no-repeat bottom right; background-size: contain;}
+.WZY_main01{ width:100%;position:absolute; top:50px; left:0px; bottom:32px;overflow:auto; background-color:#f2f2f2;}
+.WZY_main02{ width:100%;position:absolute; top:50px; left:0px; bottom:32px;overflow:auto;}
+.WZY_banner{width:100%; height:180px; }
+.WZY_icon img{ display:block; margin-left:28%;}
+.WZY_icon span{ width:25%; text-align:center; float:left; font-size:14x; color:#666; line-height:20px; margin-top:6%;}
+.WZY_foot{width:100%; height:36px; position:absolute; left:0px; bottom:0px;background-color:#EBA2A3;background: url(../img/wzy/BQ.png) center no-repeat; background-size:cover;overflow:hidden;}
+/*学校新闻*/
+.NEW_msg{ width:94%;background-color:#fff;border-radius:10px; margin-top:40px; float:left; margin-left:3%;}
+.NEW_msg li,ul{ width:100%; float:left;}
+.NEW_msg li{ border-bottom:1px solid #ccc; padding-bottom:30px;}
+.new_msg01{ font-size:40px; color:#333; margin-top:30px; margin-left:20px; float:left}
+.new_msg02{ font-size:32px; color:#999; margin-top:30px;margin-left:5px;float:left}
+.new_title{ height:30px; background-color:#f2f2f2; float:left; width:100%; margin-top:40px; font-size:14px; line-height:30px; border-left:4px solid #00923f; box-sizing:border-box;}
+.new_list ul{ margin-bottom:50px;}
+.new_list li{ font-size:12px; line-height:30px; margin-left:20px; border-bottom:#00923f dashed 1px;width:90%;}
+.new_list span{ float:right; font-size:12px; color:#666; padding-right:20px;}
+.msg_Dome{ width:100%; border:1px solid #ccc; border-radius:10px; padding:6px; margin:auto; margin-top:30px; float:left; background-color:#fff;}
+.msg_banner_title{ position:absolute; bottom:0; left:0; width:100%; height:30px; background-color:#000; opacity:0.8; line-height:30px; color:#fff; padding-left:10px;}
+.msg_Dome_news li{ padding-bottom:10px; border-bottom:#ccc 1px solid; float:left; padding-top:10px;}
+.new_text{ width:79%; float:left;}
+.new_photo{ width:20%; float:right; text-align:right}
+.new_main{ margin-top:10px;}

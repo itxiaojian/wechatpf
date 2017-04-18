@@ -1,0 +1,90 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+*, html, body {
+	margin: 0;
+	padding: 0;
+}
+address, caption, cite, code, dfn, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+body {
+	color: #333;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#fff;
+}
+input{
+	border:none;
+}
+h3{
+	width:90%;
+	margin:0 auto;
+	font-size:16px;
+	text-align:left;
+	padding:30px 0 6px;
+}
+table {
+	/* background:#d1e3ef; */
+	border-collapse:separate;
+	border-spacing:1px;
+	border-color:gray;
+}
+table tr {
+	width:100%;
+}
+table th {
+	color:#333;
+	font-weight:bold;
+	position:relative;
+	background:#034579;
+}
+table td {
+	color:#575757;
+	background:#fff;
+}
+table th, table td {
+	padding:8px;
+	font-size:14px;
+	border-spacing:1px;
+}
+.tab-container {
+	width:100%;
+	text-align:center;
+}
+.tab-container table{
+	/*width:90%;*/
+	width:95%;
+	margin:0 auto;
+}
+.tab-container table tr.bgcolor01 td{
+	background:#edf6ff;
+	background-color:#edf6ff;
+}
+.tab-container table tr.bgcolor02 td{
+	background:#e2effe;
+}
+.tab-container table tr.bgcolor03 td{
+	background:#b1d2ff;
+}
+.tab-container table tr.bgcolor04 td{
+	color:#fff;
+	background:#58cbfa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

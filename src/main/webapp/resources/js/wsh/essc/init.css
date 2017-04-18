@@ -1,0 +1,179 @@
+body {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+h1 {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+h2 {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+h3 {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+p {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+ul {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+li {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+a {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+img {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+input {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+fieldset {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+legend {
+	margin: 0px; padding: 0px; border: currentColor; border-image: none;
+}
+h1 {
+	color: inherit; font-size: inherit; font-weight: normal; text-decoration: none;
+}
+h2 {
+	color: inherit; font-size: inherit; font-weight: normal; text-decoration: none;
+}
+h3 {
+	color: inherit; font-size: inherit; font-weight: normal; text-decoration: none;
+}
+a {
+	color: inherit; font-size: inherit; font-weight: normal; text-decoration: none;
+}
+p {
+	-ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+a {
+	-ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+span {
+	-ms-word-break: break-all; -ms-word-wrap: break-word;
+}
+ul {
+	list-style: none;
+}
+input {
+	
+}
+textarea {
+	
+}
+fieldset {
+	
+}
+body {
+	width: 100%; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3"; font-size: 14px; -webkit-font-smoothing: antialiased;
+}
+.container {
+	width: 100%;
+}
+.center {
+	margin: 0px auto;
+}
+.clearfix::after {
+	clear: both; display: block; content: "";
+}
+.clearfix {
+	-ms-zoom: 1;
+}
+.hidden {
+	display: none;
+}
+.hidden2 {
+	visibility: hidden;
+}
+header.bottom {
+	height: 60px; position: relative;
+}
+header.top {
+	height: 60px; position: relative;
+}
+header.bottom {
+	width: 100%; bottom: 0px; position: fixed; z-index: 9; background-color: rgba(68, 193, 165, 0.8);
+}
+header.top {
+	margin: 10px auto; width: 94%; background-color: rgb(68, 193, 165);
+}
+.slogan {
+	background: url("/resource/mobile/image/logo-slogan.png") no-repeat 0% 0% / auto 100%; margin: 10px 0px 0px 10px; width: 180px; height: 40px; color: rgb(255, 255, 255); float: left; position: relative;
+}
+.slogan h1 {
+	text-indent: -99em; font-size: 0px;
+}
+.s-main {
+	width: 40px; height: 40px;
+}
+.s-main a {
+	width: 100%; height: 100%; display: block;
+}
+.s-submain {
+	left: 49px; bottom: 0px; font-size: 12px; white-space: nowrap; position: absolute;
+}
+.download-btn {
+	width: 90px; height: 60px; line-height: 60px; margin-right: 10px; float: right;
+}
+.download-btn a {
+	background: url("/resource/mobile/image/download.png") no-repeat center / 67px rgb(255, 255, 255); border-radius: 15px; width: 100%; height: 30px; text-indent: -99em; font-size: 0px; vertical-align: middle; display: inline-block;
+}
+header .close {
+	background: url("/resource/mobile/image/close.png") no-repeat 0% 0% / 100%; margin: 3px 3px 0px 0px; border-radius: 9px; width: 18px; height: 18px; float: right;
+}
+.close a {
+	width: 100%; height: 100%; text-indent: -99em; font-size: 0px; display: block;
+}
+header.top .close {
+	top: -10px; right: -10px; float: none; position: absolute; background-color: rgb(68, 193, 165);
+}
+footer.copyright {
+	text-align: center; color: rgb(170, 170, 170); line-height: 1.5em; padding-top: 10px; padding-bottom: 10px; font-size: 12px;
+}
+.copyright .wx-link {
+	color: rgb(36, 177, 156); font-size: 12px;
+}
+div.header {
+	padding: 5px 10px; height: 30px; background-color: rgb(19, 147, 255);
+}
+.h-logo {
+    float: left;
+    font-size: 0;
+}
+.h-logo a {
+    display: block;
+}
+.h-logo span {
+    background: url("logo-slogan.png") no-repeat scroll 0 0 / auto 100% transparent;
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+    width: 30px;
+}
+.h-logo h1 {
+    background: url("logo-slogan.png") no-repeat scroll right 4px / 128px auto transparent;
+    display: inline-block;
+    height: 30px;
+    width: 85px;
+}
+.open-api {
+	background: no-repeat right / auto 100%; margin: 6px 0px; width: 96px; height: 18px; font-size: 0px; float: right;
+}
+.download-api {
+	background: no-repeat right / auto 100%; margin: 6px 0px; width: 96px; height: 18px; font-size: 0px; float: right;
+}
+.open-api a {
+	width: 100%; height: 100%; display: block;
+}
+.download-api a {
+	width: 100%; height: 100%; display: block;
+}
+.open-api {
+	width: 82px; background-image: url("/resource/mobile/image/open_api.png");
+}
+.download-api {
+	background-image: url("/resource/mobile/image/download_api.png");
+}

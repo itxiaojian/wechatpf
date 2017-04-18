@@ -1,0 +1,36 @@
+﻿
+.wjhr {
+    background-color: #55a1e3;
+    height: 3px;
+    width: 100%;
+}
+.wj_color {
+    background: #55a1e3 none repeat scroll 0 0;
+    color: #f7f7f7;
+}
+.wj_color:hover {
+    background: #418ecf none repeat scroll 0 0;
+}
+.wj_disable {
+    background: #8fc9f4 none repeat scroll 0 0 !important;
+    color: #707070;
+    cursor: default !important;
+}
+.wj_disable:hover {
+    background: #8fc9f4 none repeat scroll 0 0 !important;
+}
+.wjprogress span {
+    color: #55a1e3;
+}
+.bar {
+    border: 1px solid #55a1e3;
+    font-size: 0;
+    height: 7px;
+    text-align: left;
+    width: 208px;
+}
+.barbox {
+    background-color: #55a1e3;
+    height: 7px;
+    width: 20%;
+}
