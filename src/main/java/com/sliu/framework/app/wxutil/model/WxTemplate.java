@@ -2,8 +2,6 @@ package com.sliu.framework.app.wxutil.model;
 
 import java.util.Map;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
 /** 
  * @author:zhangyi 
